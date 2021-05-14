@@ -12,6 +12,9 @@ function App() {
                 <Navbar/>
                 <Switch>
                     <Route exact path='/'>
+                        <HomeContent/>
+                    </Route>
+                    <Route exact path='/about'>
                         <AboutContent/>
                     </Route>
                     <Route path='/resume'>
