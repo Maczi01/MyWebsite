@@ -11,12 +11,11 @@ const NavbarWrapper = styled.nav`
 `
 
 const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
   padding: 10px;
-  background-color: chartreuse;
   text-align: center;
   color: black;
   width: 180px;
-  list-style: none;
      &.active {
       background-color: ${({theme}) => theme.colors.yellow};
       width: 180px;
@@ -27,8 +26,8 @@ const StyledNavLink = styled(NavLink)`
 const Navbar = () => (
 
     <NavbarWrapper>
-        <StyledNavLink exact to="/" >Główna</StyledNavLink ><br/>
-        <StyledNavLink to="/about" activeclass="active">O mnie </StyledNavLink ><br/>
+        <StyledNavLink exact to="/">Główna</StyledNavLink><br/>
+        <StyledNavLink to="/about" activeclass="active">O mnie </StyledNavLink><br/>
         <StyledNavLink to="/resume" activeclass="active">Pobierz moje CV</StyledNavLink><br/>
         <StyledNavLink to="/contact" activeclass="active">Napisz do mnie</StyledNavLink><br/>
         <StyledNavLink to="/projects" activeclass="active">Projekty</StyledNavLink><br/>

@@ -1,10 +1,17 @@
+import Typical from 'react-typical'
+
+
 const HomeContent = () => (
     <>
         <flex>
             <h2>
                 <strong>
-                    Cześć, jestem Mati.
-                    Początkujący Fullstack developer
+                    <Typical
+                        steps={['Cześć! 👋, jestem Mati.\n' +
+                        '                    Początkujący Fullstack Developer.', 1000]}
+                        loop={Infinity}
+                        wrapper="p"
+                    />
                 </strong>
             </h2>
         </flex>
