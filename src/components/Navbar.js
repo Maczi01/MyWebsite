@@ -6,7 +6,6 @@ const NavbarWrapper = styled.nav`
   align-items: center;
   justify-content: flex-end;
   height: 70px;
-  background-color: yellow;
   margin-bottom: 20px;
   transition: all 0.5s linear;
 `
@@ -14,18 +13,25 @@ const NavbarWrapper = styled.nav`
 const StyledNavLink = styled(NavLink)`
   padding: 10px;
   background-color: chartreuse;
+  text-align: center;
   color: black;
+  width: 180px;
   list-style: none;
+     &.active {
+      background-color: ${({theme}) => theme.colors.yellow};
+      width: 180px;
+      border-radius: 45px;
+    }
 `
 
 const Navbar = () => (
 
     <NavbarWrapper>
-        <StyledNavLink to="/">Główna</StyledNavLink><br/>
-        <StyledNavLink to="/about">O mnie </StyledNavLink><br/>
-        <StyledNavLink to="/resume">Pobierz moje CV</StyledNavLink><br/>
-        <StyledNavLink to="/contact">Napisz do mnie</StyledNavLink><br/>
-        <StyledNavLink to="/projects">Projekty</StyledNavLink><br/>
+        <StyledNavLink exact to="/" >Główna</StyledNavLink ><br/>
+        <StyledNavLink to="/about" activeclass="active">O mnie </StyledNavLink ><br/>
+        <StyledNavLink to="/resume" activeclass="active">Pobierz moje CV</StyledNavLink><br/>
+        <StyledNavLink to="/contact" activeclass="active">Napisz do mnie</StyledNavLink><br/>
+        <StyledNavLink to="/projects" activeclass="active">Projekty</StyledNavLink><br/>
     </NavbarWrapper>
 );
 

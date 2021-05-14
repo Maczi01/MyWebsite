@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/theme/GlobalStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/HomeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/HomeContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,6 +51,7 @@
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Projects" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Home" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Contact" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Resume" />
     </key>
@@ -76,7 +81,7 @@
       <workItem from="1610319826544" duration="1722000" />
       <workItem from="1610444206481" duration="1049000" />
       <workItem from="1611872312096" duration="594000" />
-      <workItem from="1620989390260" duration="11086000" />
+      <workItem from="1620989390260" duration="15943000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -106,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621002996044</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Home page">
+      <created>1621004453124</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621004453124</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +142,7 @@
     <MESSAGE value="Added pages (Home, projects, resume)" />
     <MESSAGE value="Added some content to pages." />
     <MESSAGE value="Added Navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Navbar" />
+    <MESSAGE value="Added Home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Home page" />
   </component>
 </project>

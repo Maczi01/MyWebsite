@@ -4,28 +4,40 @@ import AboutContent from "./About/AboutContent";
 import ResumeContent from "./Resume/ResumeContent";
 import ProjectsContent from "./Projects/ProjectsContent";
 import Navbar from "./components/Navbar";
+import HomeContent from "./Home/HomeContent";
+import {ThemeProvider} from "styled-components";
+import {lightTheme} from './theme/theme'
+import styled from "styled-components";
+import GlobalStyle from "./theme/GlobalStyle";
+
+const StyledApp = styled.div`
+      background-color: ${({theme}) => theme.backgroundColor};
+`;
 
 function App() {
     return (
-        <>
-            <Router>
-                <Navbar/>
-                <Switch>
-                    <Route exact path='/'>
-                        <HomeContent/>
-                    </Route>
-                    <Route exact path='/about'>
-                        <AboutContent/>
-                    </Route>
-                    <Route path='/resume'>
-                        <ResumeContent/>
-                    </Route>
-                    <Route path='/projects'>
-                        <ProjectsContent/>
-                    </Route>
-                </Switch>
-            </Router>
-        </>
+        <StyledApp>
+            <ThemeProvider theme={lightTheme}>
+                <GlobalStyle backgroundColor={lightTheme.backgroundColor}/>
+                    <Router>
+                        <Navbar/>
+                        <Switch>
+                            <Route exact path='/'>
+                                <HomeContent/>
+                            </Route>
+                            <Route exact path='/about'>
+                                <AboutContent/>
+                            </Route>
+                            <Route path='/resume'>
+                                <ResumeContent/>
+                            </Route>
+                            <Route path='/projects'>
+                                <ProjectsContent/>
+                            </Route>
+                        </Switch>
+                    </Router>
+            </ThemeProvider>
+        </StyledApp>
     );
 }
 
