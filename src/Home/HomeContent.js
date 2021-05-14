@@ -1,21 +1,13 @@
 import Typical from 'react-typical'
-
+import MainContainer from "../components/MainContainer";
+import Intro from "../components/Intro";
+import IntroLinks from "../components/IntroLinks";
 
 const HomeContent = () => (
-    <>
-        <flex>
-            <h2>
-                <strong>
-                    <Typical
-                        steps={['Cześć! 👋, jestem Mati.\n' +
-                        '                    Początkujący Fullstack Developer.', 1000]}
-                        loop={Infinity}
-                        wrapper="p"
-                    />
-                </strong>
-            </h2>
-        </flex>
-    </>
+    <MainContainer>
+        <Intro/>
+        <IntroLinks/>
+    </MainContainer>
 )
 
 export default HomeContent;

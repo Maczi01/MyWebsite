@@ -1,6 +1,9 @@
+import MainContainer from "../components/MainContainer";
+
+
 const ResumeContent = () => (
     <>
-        <flex>
+        <MainContainer>
             <h2>
                 <strong>
                     Pobierz moje CV
@@ -12,7 +15,7 @@ const ResumeContent = () => (
                     swobodnie po internecie. Zostaw swoje dane, CV, zostanie przesłane na Twój adres email.
                 </strong>
             </p>
-        </flex>
+        </MainContainer>
     </>
 )
 

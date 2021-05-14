@@ -29,7 +29,7 @@ const Navbar = () => (
         <StyledNavLink exact to="/">Główna</StyledNavLink><br/>
         <StyledNavLink to="/about" activeclass="active">O mnie </StyledNavLink><br/>
         <StyledNavLink to="/resume" activeclass="active">Pobierz moje CV</StyledNavLink><br/>
-        <StyledNavLink to="/contact" activeclass="active">Napisz do mnie</StyledNavLink><br/>
+        <StyledNavLink to="/contact" activeclass="active">Kontakt</StyledNavLink><br/>
         <StyledNavLink to="/projects" activeclass="active">Projekty</StyledNavLink><br/>
     </NavbarWrapper>
 );
