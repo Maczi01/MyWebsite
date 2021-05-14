@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Contact/ContactContent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/About/AboutContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/About/AboutContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Projects/ProjectsContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/ProjectsContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resume/ResumeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resume/ResumeContent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +42,10 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/Pshemcio/portfolio" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\components" />
+      <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Projects" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Contact" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Resume" />
@@ -75,7 +76,7 @@
       <workItem from="1610319826544" duration="1722000" />
       <workItem from="1610444206481" duration="1049000" />
       <workItem from="1611872312096" duration="594000" />
-      <workItem from="1620989390260" duration="8188000" />
+      <workItem from="1620989390260" duration="9805000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -91,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620996949691</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added some content to pages.">
+      <created>1621000923036</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621000923036</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start working on portfolio" />
     <MESSAGE value="Added pages (Home, projects, resume)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pages (Home, projects, resume)" />
+    <MESSAGE value="Added some content to pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some content to pages." />
   </component>
 </project>

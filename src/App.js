@@ -3,17 +3,13 @@ import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import AboutContent from "./About/AboutContent";
 import ResumeContent from "./Resume/ResumeContent";
 import ProjectsContent from "./Projects/ProjectsContent";
-import {Link} from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
     return (
         <>
             <Router>
-                <div>
-                    <Link to="/">O mnie</Link><br/>
-                    <Link to="/resume">Napisz do mnie</Link><br/>
-                    <Link to="/projects">Projekty</Link><br/>
-                </div>
+                <Navbar/>
                 <Switch>
                     <Route exact path='/'>
                         <AboutContent/>
