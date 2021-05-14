@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Intro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/IntroLinks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectsContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Title.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/HomeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/HomeContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resume/ResumeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resume/ResumeContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/About/AboutContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/About/AboutContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projects/ProjectsContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projects/ProjectsContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/theme.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +24,7 @@
         <option value="JavaScript File" />
       </list>
     </option>
+    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,7 +84,7 @@
       <workItem from="1610319826544" duration="1722000" />
       <workItem from="1610444206481" duration="1049000" />
       <workItem from="1611872312096" duration="594000" />
-      <workItem from="1620989390260" duration="21727000" />
+      <workItem from="1620989390260" duration="24490000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -134,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621013409613</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added intro and intro links">
+      <created>1621020652155</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1621020652156</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +169,7 @@
     <MESSAGE value="Added Home page" />
     <MESSAGE value="Changes in global theme" />
     <MESSAGE value="Added Typical" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Typical" />
+    <MESSAGE value="Added intro and intro links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added intro and intro links" />
   </component>
 </project>

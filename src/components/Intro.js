@@ -15,7 +15,7 @@ const Intro = () => (
     <IntroWrapper>
         <Typical
             steps={['Cześć! 👋, jestem Mati.\n' +
-            '                    Jepstem oczątkującym Fullstack Developerem.', 1000]}
+            '                    Jestem początkującym Fullstack Developerem.', 1000]}
             loop={Infinity}
             wrapper="p"
         />
