@@ -1,18 +1,19 @@
-const AboutContent = () => (
+const ResumeContent = () => (
     <>
         <flex>
             <h2>
                 <strong>
-                    O mnie
+                    Pobierz moje CV
                 </strong>
             </h2>
             <p>
                 <strong>
-                    Nazywam się Mati
+                    Jeśli chcesz pobrać moje CV, zostaw proszę swoje dane. Nie chcę, by moje CV przemieszczało się
+                    swobodnie po internecie. Zostaw swoje dane, CV, zostanie przesłane na Twój adres email.
                 </strong>
             </p>
         </flex>
     </>
 )
 
-export default AboutContent;
+export default ResumeContent;
