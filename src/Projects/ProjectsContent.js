@@ -2,7 +2,7 @@ import React from "react";
 import MainContainer from "../components/MainContainer";
 import styled from "styled-components";
 import Title from "../components/Title";
-import ProjectsContainer from "../components/ProjectsContainer";
+import ProjectsList from "../components/ProjectsList";
 
 const ProjectsText = styled.p`
   display: flex;
@@ -20,7 +20,7 @@ const ProjectsContent = () => (
             Poniżej znajduje się lista moich projektów. Są to głównie projekty niekomercyjne, wykonane w czasie
             wolnym. Każdy z projektów posiada krótki opis.
         </ProjectsText>
-        <ProjectsContainer/>
+        <ProjectsList/>
     </MainContainer>
 )
 

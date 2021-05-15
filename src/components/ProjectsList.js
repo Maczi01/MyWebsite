@@ -16,7 +16,7 @@ const ProjectsContainerWrapper = styled.div`
   list-style-type: none;
 `
 
-const ProjectsContainer = () => (
+const ProjectsList = () => (
     <ProjectsContainerWrapper>
         <ProjectItem image={wheatherapp} title={'Wheather app'}/>
         <ProjectItem image={attentioncontrol} title={'Attention control'}/>
@@ -27,4 +27,4 @@ const ProjectsContainer = () => (
     </ProjectsContainerWrapper>
 );
 
-export default ProjectsContainer;
+export default ProjectsList;

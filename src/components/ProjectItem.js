@@ -8,7 +8,7 @@ const ProjectItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //position: relative;
+  position: relative;
   border-radius: 15px;
   min-height: 30rem;
 `
@@ -34,6 +34,10 @@ const ProjectTitle = styled.h3`
   color: ${({theme}) => theme.colors.white};
   justify-content: center;
   font-weight: bold;
+  margin-bottom: auto; 
+  position: absolute;
+  bottom: 0;
+  left: 50%
 `
 // const ProjectDescription = styled.p`
 //   display: flex;
@@ -45,7 +49,7 @@ const ProjectTitle = styled.h3`
 const ProjectItem = ({image, title}) => (
     <ProjectItemWrapper>
         <ProjectThumbnail src={image}/>
-            <ProjectTitle>{title}</ProjectTitle>
+        <ProjectTitle>{title}</ProjectTitle>
     </ProjectItemWrapper>
 );
 
