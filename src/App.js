@@ -9,6 +9,7 @@ import {ThemeProvider} from "styled-components";
 import {lightTheme} from './theme/theme'
 import styled from "styled-components";
 import GlobalStyle from "./theme/GlobalStyle";
+import ContactContent from "./Contact/ContactContent";
 
 const StyledApp = styled.div`
       background-color: ${({theme}) => theme.backgroundColor};
@@ -19,23 +20,26 @@ function App() {
         <StyledApp>
             <ThemeProvider theme={lightTheme}>
                 <GlobalStyle backgroundColor={lightTheme.backgroundColor}/>
-                    <Router>
-                        <Navbar/>
-                        <Switch>
-                            <Route exact path='/'>
-                                <HomeContent/>
-                            </Route>
-                            <Route exact path='/about'>
-                                <AboutContent/>
-                            </Route>
-                            <Route path='/resume'>
-                                <ResumeContent/>
-                            </Route>
-                            <Route path='/projects'>
-                                <ProjectsContent/>
-                            </Route>
-                        </Switch>
-                    </Router>
+                <Router>
+                    <Navbar/>
+                    <Switch>
+                        <Route exact path='/'>
+                            <HomeContent/>
+                        </Route>
+                        <Route exact path='/about'>
+                            <AboutContent/>
+                        </Route>
+                        <Route path='/resume'>
+                            <ResumeContent/>
+                        </Route>
+                        <Route path='/projects'>
+                            <ProjectsContent/>
+                        </Route>
+                        <Route path='/contact'>
+                            <ContactContent/>
+                        </Route>
+                    </Switch>
+                </Router>
             </ThemeProvider>
         </StyledApp>
     );

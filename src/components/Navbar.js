@@ -8,7 +8,7 @@ const NavbarWrapper = styled.nav`
   height: 70px;
   margin-bottom: 20px;
   transition: all 0.5s linear;
-`
+`;
 
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
@@ -21,7 +21,8 @@ const StyledNavLink = styled(NavLink)`
       width: 180px;
       border-radius: 45px;
     }
-`
+`;
+
 
 const Navbar = () => (
 
