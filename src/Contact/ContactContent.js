@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import MainContainer from "../components/MainContainer";
+import emailjs from 'emailjs-com';
 
 const FormWrapper = styled.div`
       display: flex;
@@ -45,6 +46,25 @@ const StyledInput = styled.input`
     font-weight: 300;
     background-color: greenyellow;
 `;
+
+
+const SERVICE_ID = process.env.REACT_APP_FORM_SERVICE_KEY;
+const TEMPLATE_ID = process.env.REACT_APP_FORM_TEMPLATE_KEY;
+const USER_ID = process.env.REACT_APP_FORM_USER_KEY;
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    // send(SERVICE_ID, TEMPLATE_ID, "dupa dupa", USER_ID);
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, "dupaaaa", USER_ID)
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+}
+
 const ContactContent = () => (
     <>
         <MainContainer>
@@ -58,24 +78,28 @@ const ContactContent = () => (
                 wszystkim
             </p>
 
-            <form autoComplete="off">
-                <FormItem>
-                    <StyledLabel htmlFor="currentQuantity">
-                        <p>p</p>
-                    </StyledLabel>
-                    <StyledInput
-                    >
-                    </StyledInput>
-                </FormItem>
-
-                <FormItem>
-                    <button> wyslij maila</button>
-                </FormItem>
-
-                <button
-                >ok
-                </button>
+            <form onSubmit={sendEmail}>
+                <input type="hidden" name="contact_number" />
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
             </form>
+
+            {/*<form onSubmit={sendEmail}>*/}
+            {/*        <StyledLabel htmlFor="currentQuantity">*/}
+            {/*            <p>p</p>*/}
+            {/*        </StyledLabel>*/}
+            {/*        <StyledInput*/}
+            {/*        >*/}
+            {/*        </StyledInput>*/}
+
+            {/*    <input type="submit" value="Send" />*/}
+
+            {/*</form>*/}
         </MainContainer>
     </>
 )

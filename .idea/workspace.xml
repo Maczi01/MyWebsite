@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Contact/ContactContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contact/ContactContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resume/ResumeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resume/ResumeContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +86,8 @@
       <workItem from="1620989390260" duration="29324000" />
       <workItem from="1621108052357" duration="514000" />
       <workItem from="1621178315289" duration="2938000" />
-      <workItem from="1621202264251" duration="1452000" />
+      <workItem from="1621202264251" duration="3652000" />
+      <workItem from="1621285749108" duration="2302000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -165,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621072749004</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added contact form (very first version)">
+      <created>1621204532419</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1621204532419</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +205,7 @@
     <MESSAGE value="Added few new components" />
     <MESSAGE value="Changes in Projects section" />
     <MESSAGE value="Changes in Project list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in Project list" />
+    <MESSAGE value="Added contact form (very first version)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added contact form (very first version)" />
   </component>
 </project>
