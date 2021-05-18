@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import MainContainer from "../components/MainContainer";
 import emailjs from 'emailjs-com';
+import { send } from 'emailjs-com';
+
+import './ContactUs.css';
+
 
 const FormWrapper = styled.div`
       display: flex;
@@ -47,17 +51,16 @@ const StyledInput = styled.input`
     background-color: greenyellow;
 `;
 
-
-const SERVICE_ID = process.env.REACT_APP_FORM_SERVICE_KEY;
+const SERVICE_ID = "service_qzsarwb";
 const TEMPLATE_ID = process.env.REACT_APP_FORM_TEMPLATE_KEY;
 const USER_ID = process.env.REACT_APP_FORM_USER_KEY;
 
 const sendEmail = (e) => {
     e.preventDefault();
 
-    // send(SERVICE_ID, TEMPLATE_ID, "dupa dupa", USER_ID);
-
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, "dupaaaa", USER_ID)
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, {from_name: 'on',
+        message: 'ddd',
+        reply_to: 'reply to me'}, USER_ID)
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -75,31 +78,17 @@ const ContactContent = () => (
             </h2>
             <p>
                 Pytania, współpraca, oferta pracy, a może luźna pogawędka o ostatnim meczu? Pisz śmiało, odpisuje
-                wszystkim
+                na każdy email
             </p>
 
             <form onSubmit={sendEmail}>
-                <input type="hidden" name="contact_number" />
+                <input type="hidden" name="contact_number"/>
                 <label>Name</label>
-                <input type="text" name="user_name" />
+                <input type="text" name="user_name"/>
                 <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
+                <textarea name="messag  e"/>
+                <input type="submit" value="Send"/>
             </form>
-
-            {/*<form onSubmit={sendEmail}>*/}
-            {/*        <StyledLabel htmlFor="currentQuantity">*/}
-            {/*            <p>p</p>*/}
-            {/*        </StyledLabel>*/}
-            {/*        <StyledInput*/}
-            {/*        >*/}
-            {/*        </StyledInput>*/}
-
-            {/*    <input type="submit" value="Send" />*/}
-
-            {/*</form>*/}
         </MainContainer>
     </>
 )
