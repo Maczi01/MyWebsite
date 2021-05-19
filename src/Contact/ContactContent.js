@@ -2,8 +2,7 @@ import styled from "styled-components";
 import MainContainer from "../components/MainContainer";
 import emailjs from 'emailjs-com';
 import {send} from 'emailjs-com';
-
-import './ContactUs.css';
+import {useEffect, useState} from 'react';
 
 
 const FormWrapper = styled.div`
