@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import MainContainer from "../components/MainContainer";
 import emailjs from 'emailjs-com';
-import { send } from 'emailjs-com';
+import {send} from 'emailjs-com';
 
 import './ContactUs.css';
 
@@ -55,53 +55,102 @@ const SERVICE_ID = "service_qzsarwb";
 const TEMPLATE_ID = process.env.REACT_APP_FORM_TEMPLATE_KEY;
 const USER_ID = process.env.REACT_APP_FORM_USER_KEY;
 
-const sendEmail = (e) => {
-    e.preventDefault();
 
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, {from_name: 'on',
-        message: 'ddd',
-        reply_to: 'reply to me'}, USER_ID)
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
+const ContactContent = () => {
+
+
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
+    const [submitInfoMessage, setSubmitInfoMessage] = useState("");
+
+    const [toSend, setToSend] = useState({
+        from_name: '',
+        message: '',
+        reply_to: '',
+    });
+
+    const [errors, setErrors] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+    const resetFields = () => {
+        setToSend({
+            from_name: '',
+            message: '',
+            reply_to: '',
         });
+
+        setErrors({
+            name: "",
+            email: "",
+            message: ""
+        });
+    };
+
+
+    const handleChange = (e) => {
+        setToSend({...toSend, [e.target.name]: e.target.value});
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, toSend, USER_ID)
+            .then((response) => {
+                setSubmitInfoMessage("Poszło! Odezwę się najszybciej jak to możliwe!");
+                setIsSubmitted(true);
+                setIsReadyToSubmit(false);
+                resetFields();
+                console.log('sended');
+                console.log(response.status);
+            }, (error) => {
+                console.log('FAILED...', error);
+                setSubmitInfoMessage("Something wrong, use my email. :(");
+                setIsReadyToSubmit(false);
+            });
+    }
+
+    return (
+        <>
+            <MainContainer>
+                <h2>
+                    <strong>
+                        Skontaktuj się ze mną
+                    </strong>
+                </h2>
+                <p>
+                    Pytania, współpraca, oferta pracy, a może luźna pogawędka o ostatnim meczu? Pisz śmiało, odpisuje
+                    na każdy email
+                </p>
+
+                <form onSubmit={sendEmail}>
+                    <label>Name</label>
+                    <input type="text"
+                           name="name"
+                           onChange={handleChange}
+
+                           placeholder="Jak masz na imię?"
+                    />
+                    <input type="email"
+                           name="email"
+                           onChange={handleChange}
+                           placeholder="Podaj swój adres email"
+                    />
+
+                    <label>Email</label>
+                    <textarea
+                        type="text"
+                        name="email"
+                        onChange={handleChange}
+
+                        placeholder="Podaj swoją wiadomość!"
+                    />
+                    <input type="submit"
+                           isSubmitted={isSubmitted}
+                           value="Send"/>
+                </form>
+            </MainContainer>
+        </>
+    );
 }
-
-const ContactContent = () => (
-    <>
-        <MainContainer>
-            <h2>
-                <strong>
-                    Skontaktuj się ze mną
-                </strong>
-            </h2>
-            <p>
-                Pytania, współpraca, oferta pracy, a może luźna pogawędka o ostatnim meczu? Pisz śmiało, odpisuje
-                na każdy email
-            </p>
-
-            <form onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text"
-                       name="name"
-                       placeholder="Jak masz na imię?"
-                />
-                <input type="email"
-                       name="email"
-                       placeholder="Podaj swój adres email"
-                />
-
-                <label>Email</label>
-                <textarea
-                    type="text"
-                    name="email"
-                    placeholder="Podaj swoją wiadomość!"
-                />
-                <input type="submit" value="Send"/>
-            </form>
-        </MainContainer>
-    </>
-)
-
 export default ContactContent;
