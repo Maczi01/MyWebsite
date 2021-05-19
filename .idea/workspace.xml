@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Contact/ContactUs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Contact/ContactContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contact/ContactContent.js" afterDir="false" />
@@ -89,7 +87,7 @@
       <workItem from="1621178315289" duration="2938000" />
       <workItem from="1621202264251" duration="3652000" />
       <workItem from="1621285749108" duration="4834000" />
-      <workItem from="1621352643445" duration="555000" />
+      <workItem from="1621352643445" duration="1865000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -182,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621292609897</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Sending email (provisional) works ok.">
+      <created>1621354699886</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1621354699888</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +221,7 @@
     <MESSAGE value="Changes in Project list" />
     <MESSAGE value="Added contact form (very first version)" />
     <MESSAGE value="Added email js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added email js" />
+    <MESSAGE value="Sending email (provisional) works ok." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sending email (provisional) works ok." />
   </component>
 </project>

@@ -82,11 +82,22 @@ const ContactContent = () => (
             </p>
 
             <form onSubmit={sendEmail}>
-                <input type="hidden" name="contact_number"/>
                 <label>Name</label>
-                <input type="text" name="user_name"/>
+                <input type="text"
+                       name="name"
+                       placeholder="Jak masz na imię?"
+                />
+                <input type="email"
+                       name="email"
+                       placeholder="Podaj swój adres email"
+                />
+
                 <label>Email</label>
-                <textarea name="messag  e"/>
+                <textarea
+                    type="text"
+                    name="email"
+                    placeholder="Podaj swoją wiadomość!"
+                />
                 <input type="submit" value="Send"/>
             </form>
         </MainContainer>
