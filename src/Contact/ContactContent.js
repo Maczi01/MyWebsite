@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import MainContainer from "../components/MainContainer";
-import emailjs from 'emailjs-com';
-import {send} from 'emailjs-com';
-import {useEffect, useState} from 'react';
+import emailjs, {send} from 'emailjs-com';
+import {useState} from 'react';
 
 
 const FormWrapper = styled.div`
@@ -65,7 +64,7 @@ const ContactContent = () => {
     const [toSend, setToSend] = useState({
         from_name: '',
         message: '',
-        reply_to: '',
+        to_name: '',
     });
 
     const [errors, setErrors] = useState({
@@ -77,7 +76,7 @@ const ContactContent = () => {
         setToSend({
             from_name: '',
             message: '',
-            reply_to: '',
+            to_name: '',
         });
 
         setErrors({
@@ -94,7 +93,7 @@ const ContactContent = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.send(SERVICE_ID, TEMPLATE_ID, toSend, USER_ID)
+        send(SERVICE_ID, TEMPLATE_ID, toSend, USER_ID)
             .then((response) => {
                 setSubmitInfoMessage("Poszło! Odezwę się najszybciej jak to możliwe!");
                 setIsSubmitted(true);
@@ -124,28 +123,31 @@ const ContactContent = () => {
 
                 <form onSubmit={sendEmail}>
                     <label>Name</label>
-                    <input type="text"
-                           name="name"
-                           onChange={handleChange}
-
-                           placeholder="Jak masz na imię?"
+                    <input
+                        type='text'
+                        name='from_name'
+                        placeholder='Jak Ci na imie?'
+                        value={toSend.from_name}
+                        onChange={handleChange}
                     />
-                    <input type="email"
-                           name="email"
-                           onChange={handleChange}
-                           placeholder="Podaj swój adres email"
+                    <input
+                        type='email'
+                        name='to_name'
+                        placeholder='Twoj mail?'
+                        value={toSend.to_name}
+                        onChange={handleChange}
                     />
 
                     <label>Email</label>
                     <textarea
-                        type="text"
-                        name="email"
+                        type='text'
+                        name='message'
+                        placeholder='Wiadomość'
+                        value={toSend.message}
                         onChange={handleChange}
-
-                        placeholder="Podaj swoją wiadomość!"
                     />
                     <input type="submit"
-                           isSubmitted={isSubmitted}
+                           // isSubmitted={isSubmitted}
                            value="Send"/>
                 </form>
             </MainContainer>

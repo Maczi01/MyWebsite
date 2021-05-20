@@ -11,6 +11,8 @@ import styled from "styled-components";
 import GlobalStyle from "./theme/GlobalStyle";
 import ContactContent from "./Contact/ContactContent";
 
+
+
 const StyledApp = styled.div`
       background-color: ${({theme}) => theme.backgroundColor};
 `;

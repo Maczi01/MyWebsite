@@ -14,13 +14,21 @@ const ProjectItemWrapper = styled.div`
 `
 
 const ProjectThumbnail = styled.img`
-    justify-content: center;
-    margin: 0;
-    align-items: center;
-    //width: 80%;
-    //height: 150px;
-    border-radius: 8px;
-    transition: all .6s ease 0s; 
+    //justify-content: center;
+    //margin: 0;
+    //align-items: center;
+    ////width: 80%;
+    ////height: 150px;
+    //border-radius: 8px;
+    //transition: all .6s ease 0s; 
+    
+     position: absolute;
+     max-width: 100%;
+     width: 100%;
+     height: auto;
+     top: 50%;     
+     left: 50%;
+     transform: translate( -50%, -50%);
 `
 // const ProjectDescriptionContainer = styled.div`
 //   display: flex;
@@ -37,7 +45,8 @@ const ProjectTitle = styled.h3`
   margin-bottom: auto; 
   position: absolute;
   bottom: 0;
-  left: 50%
+  left: 50%;
+  text-shadow: 0 0 8px #4927ff;
 `
 // const ProjectDescription = styled.p`
 //   display: flex;
@@ -45,6 +54,16 @@ const ProjectTitle = styled.h3`
 //   margin: 20px;
 //   justify-content: center;
 // `
+
+const Image = styled.img`
+     position: absolute;
+     max-width: 100%;
+     width: 100%;
+     height: auto;
+     top: 50%;     
+     left: 50%;
+     transform: translate( -50%, -50%);
+`
 
 const ProjectItem = ({image, title}) => (
     <ProjectItemWrapper>

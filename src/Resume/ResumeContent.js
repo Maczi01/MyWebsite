@@ -1,5 +1,7 @@
 import MainContainer from "../components/MainContainer";
 import styled from "styled-components";
+import {send} from "emailjs-com";
+import {useState} from 'react';
 
 const FormWrapper = styled.div`
       display: flex;
@@ -8,9 +10,6 @@ const FormWrapper = styled.div`
       flex-direction: column;
       margin: 0 auto;
       width: 50vw;
-      @media (max-width: ${({theme}) => theme.mobile}) {
-        width: 100vw;
-     }
 `;
 
 const StyledLabel = styled.label`
@@ -33,24 +32,6 @@ const FormItem = styled.div`
       display: flex;
 `;
 
-const Select = styled.select`
-      width: 300px;
-      font-size: 18px;
-      display: flex;
-      text-decoration: none;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      height: 60px;
-      padding-left: 5px;
-      border: none;
-      margin: 6px;
-      text-align-last:center;
-      outline: none;
-      color: black;
-      background-color: red;
-`;
-
 const StyledInput = styled.input`
     display: block;
     appearance: none;
@@ -64,50 +45,116 @@ const StyledInput = styled.input`
     color: black;
     transition-duration: 0.25s;
     font-weight: 300;
-    background-color: ${({theme}) => theme.colors.gray};
-    @media (max-width: ${({theme}) => theme.mobile}) {
-       height: 50px;
-    }
-  }
+    background-color: greenyellow;
 `;
 
-const ResumeContent = () => (
-    <>
-        <MainContainer>
-            <h2>
-                <strong>
-                    Pobierz moje CV
-                </strong>
-            </h2>
-            <p>
-                <strong>
-                    Jeśli chcesz pobrać moje CV, zostaw proszę swoje dane. Nie chcę, by moje CV przemieszczało się
-                    swobodnie po internecie. Zostaw swoje dane, CV, zostanie przesłane na Twój adres email.
-                </strong>
+const SERVICE_ID = "service_qzsarwb";
+const TEMPLATE_ID = process.env.REACT_APP_FORM_TEMPLATE_KEY;
+const USER_ID = process.env.REACT_APP_FORM_USER_KEY;
 
-                <form autoComplete="off">
-                    <FormItem>
-                        <StyledLabel htmlFor="currentQuantity">
-                            <p >p</p>
-                        </StyledLabel>
-                        <StyledInput
-                        >
-                        </StyledInput>
-                    </FormItem>
+const ResumeContent = () => {
 
-                    <FormItem>
-                        <button> wyslij maila</button>
-                    </FormItem>
 
-                    <button
-                    >ok
-                    </button>
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
+    const [submitInfoMessage, setSubmitInfoMessage] = useState("");
+
+    const [toSend, setToSend] = useState({
+        from_name: '',
+        message: '',
+        to_name: '',
+        goal: 'check'
+    });
+
+    const [errors, setErrors] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+    const resetFields = () => {
+        setToSend({
+            from_name: '',
+            to_name: '',
+            goal: ''
+        });
+
+        setErrors({
+            name: "",
+            email: "",
+            message: ""
+        });
+    };
+
+
+    const handleChange = (e) => {
+        setToSend({...toSend, [e.target.name]: e.target.value});
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        send(SERVICE_ID, TEMPLATE_ID, toSend, USER_ID)
+            .then((response) => {
+                setSubmitInfoMessage("Poszło! Odezwę się najszybciej jak to możliwe!");
+                setIsSubmitted(true);
+                setIsReadyToSubmit(false);
+                resetFields();
+                console.log('sended');
+                console.log(response.status);
+            }, (error) => {
+                console.log('FAILED...', error);
+                setSubmitInfoMessage("Something wrong, use my email. :(");
+                setIsReadyToSubmit(false);
+            });
+    }
+
+
+
+    return (
+        <>
+            <MainContainer>
+                <h2>
+                    <strong>
+                        Pobierz moje CV
+                    </strong>
+                </h2>
+                <p>
+                    Potrzebujesz moje CV? Oczywiście możesz je pobrać. Nie chcę jednak, by moje dane latały gdzieś po internecie.
+                    Jeśli pobierasz moje CV, pozostaw prosze swoje dane.
+                </p>
+                <form onSubmit={sendEmail}>
+                    <label>Name</label>
+                    <input
+                        type='text'
+                        name='from_name'
+                        placeholder='Jak Ci na imie?'
+                        value={toSend.from_name}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type='email'
+                        name='to_name'
+                        placeholder='Twoj mail?'
+                        value={toSend.to_name}
+                        onChange={handleChange}
+                    />
+
+
+                    <select
+                        name='goal'
+                        value={toSend.goal}
+                        onChange={handleChange}
+                    >
+                        <option label="just check" value="just check"/>
+                        <option label="I have job for you" value="I have job for you"/>
+                        <option label="photo" value="photo"/>
+                    </select>
+                    <label>Email</label>
+                    <input type="submit"
+                        // isSubmitted={isSubmitted}
+                           value="Pobieram Twoje CV"/>
                 </form>
-
-
-            </p>
-        </MainContainer>
-    </>
-)
-
+            </MainContainer>
+        </>
+    );
+}
 export default ResumeContent;
