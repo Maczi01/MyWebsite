@@ -26,12 +26,15 @@ const IntroWrapper = styled.div`
 
 const Intro = () => (
     <IntroWrapper>
-        <Typical
-            steps={['Cześć! 👋, jestem Mati.\n' +
-            '                    Jestem początkującym Fullstack Developerem.', 1000]}
-            loop={1}
-            wrapper="p"
+        <Typewriter
+
         />
+        {/*<Typical*/}
+        {/*    steps={['Cześć! 👋, jestem Mati.\n' +*/}
+        {/*    '                    Jestem początkującym Fullstack Developerem.', 1000]}*/}
+        {/*    loop={1}*/}
+        {/*    wrapper="p"*/}
+        {/*/>*/}
     </IntroWrapper>
 );
 
