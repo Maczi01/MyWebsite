@@ -9,13 +9,16 @@ const AboutTitle = styled.h3`
   margin: 20px;
   justify-content: center;
   font-weight: bold;
-`
+  color: ${({theme}) => theme.colors.yellow};
+`;
+
 const AboutText = styled.p`
   display: flex;
   padding: 10px;
   margin: 20px;
   justify-content: center;
-`
+  color: ${({theme}) => theme.colors.yellow};
+`;
 
 const AboutContent = () => (
     <MainContainer>
@@ -24,7 +27,7 @@ const AboutContent = () => (
             Nazywam się Mateusz, od kilku lat pracuje jako konstruktor w branży mechanicznej. Ukończyłem
             Inżynierię mechaniczną na Politechnice Wrocławskiej z tytułem magistra. Od kilku lat interesuje się
             programowaniem, ze szczególnym uwzględnieniem projektowania aplikacji internetowych. W obszarze
-            moich zainteresowań są zagadnienia związane z frontendem - głównie React.js, a także z backednem
+            moich zainteresowań są zagadnienia związane z frontendem - głównie React, a także z backednem
             (Java i Spring).
         </AboutText>
         <AboutTitle>
@@ -32,7 +35,8 @@ const AboutContent = () => (
         </AboutTitle>
         <AboutText>
             Programowanie to coś, co sprawia mi ogromną frajdę. Uwielbiam poznawać nowe technologie, tworzyć
-            nowe projekty i rozwiązywać problemy. W nauce programowania pociąga mnie ogrom wiedzy.
+            nowe projekty i rozwiązywać problemy. W nauce programowania pociąga mnie ogrom wiedzy, ciągłe zmiany i
+            dostępność materiałów do nauki.
         </AboutText>
         <AboutTitle>
             Doświadczenie
