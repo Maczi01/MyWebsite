@@ -5,6 +5,8 @@ const Container = styled.div`
      display: flex;
      flex-direction: column;
      margin: 0 auto;
+     // background:  ${({theme}) => theme.colors.gray};
+         background-color: transparent;
 
 `
 

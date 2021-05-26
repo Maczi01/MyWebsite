@@ -12,15 +12,15 @@ import GlobalStyle from "./theme/GlobalStyle";
 import ContactContent from "./Contact/ContactContent";
 
 
-
 const StyledApp = styled.div`
-      background-color: ${({theme}) => theme.backgroundColor};
+      background-color:  ${({theme}) => theme.colors.gray};
+
 `;
 
 function App() {
     return (
-        <StyledApp>
-            <ThemeProvider theme={lightTheme}>
+        <ThemeProvider theme={lightTheme}>
+            <StyledApp>
                 <GlobalStyle backgroundColor={lightTheme.backgroundColor}/>
                 <Router>
                     <Navbar/>
@@ -42,8 +42,8 @@ function App() {
                         </Route>
                     </Switch>
                 </Router>
-            </ThemeProvider>
-        </StyledApp>
+            </StyledApp>
+        </ThemeProvider>
     );
 }
 

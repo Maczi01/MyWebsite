@@ -3,7 +3,7 @@ export const lightTheme = {
         yellow: '#FFDF6C',
         lightgray: '#707070',
         white: '#FFFFFE',
-        gray: '#3F3F3F'
+        gray: '#000000'
     },
     // mobile: "767px",
     // backgroundColor:'#202020',
