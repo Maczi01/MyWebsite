@@ -1,11 +1,15 @@
 import styled from 'styled-components';
+import ButtonIcon from "./ButtonIcon";
+import githubico from '../assets/githubico.svg'
+import letter from '../assets/letter.svg'
+import {NavLink} from "react-router-dom";
 
 const StyledWrapper = styled.nav`
       position: fixed;
       left: 0;
       top: 0;
       padding: 25px 0;
-      width: 150px;
+      width: 100px;
       height: 100vh;
       background-color: ${({theme}) => theme.colors.yellow};
       display: flex;
@@ -18,8 +22,9 @@ const StyledLogoLink = styled(NavLink)`
     display: block;
     width: 67px;
     height: 67px;
-    background-image: url(${logoIcon});
     background-repeat: no-repeat;
+    background-image: url(${letter});
+
     background-position: 50% 50%;
     background-size: 80%;
     border: none;
@@ -42,15 +47,17 @@ const Sidebar = () => (
         <StyledLogoLink to="/" />
         <StyledLinksList>
             <li>
-                <ButtonIcon as={NavLink} to="/notes" icon={penIcon} activeclass="active" />
+                <ButtonIcon as={NavLink} to="/notes" icon={githubico} activeclass="active" />
             </li>
             <li>
-                <ButtonIcon as={NavLink} to="/twitters"  activeclass="active" />
+                <ButtonIcon as={NavLink} to="/twitters" icon={githubico} activeclass="active" />
             </li>
             <li>
-                <ButtonIcon as={NavLink} to="/articles"  activeclass="active" />
+                <ButtonIcon as={NavLink} to="/articles" icon={githubico} activeclass="active" />
             </li>
         </StyledLinksList>
-        <StyledLogoutButton as={NavLink} to="/login" icon={logoutIcon} />
+        {/*<StyledLogoutButton as={NavLink} to="/login" icon={logoutIcon} />*/}
     </StyledWrapper>
 );
+
+export default Sidebar;
