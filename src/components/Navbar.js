@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
+import uk from '../assets/uk.svg'
+import ie from '../assets/ie.svg'
+import pl from '../assets/pl.svg'
 
 const NavbarWrapper = styled.nav`
   display: flex;
@@ -85,6 +88,21 @@ const StyledNavLink = styled(NavLink)`
   //   }
 `;
 
+const StyledFlag = styled.button`
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background-image: url(${({ icon }) => icon});
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% 50%;
+  border: none;
+  &.active {
+    background-color: white;
+  }
+`;
+
 const Navbar = () => (
     <NavbarWrapper>
         <StyledNavLink exact to="/">Główna</StyledNavLink><br/>
@@ -92,6 +110,9 @@ const Navbar = () => (
         <StyledNavLink to="/projects" activeclass="active">Projekty</StyledNavLink><br/>
         <StyledNavLink to="/resume" activeclass="active">Moje CV</StyledNavLink><br/>
         <StyledNavLink to="/contact" activeclass="active">Kontakt</StyledNavLink><br/>
+        <StyledFlag icon={uk}/>
+        <StyledFlag icon={ie}/>
+        <StyledFlag icon={pl}/>
     </NavbarWrapper>
 );
 
