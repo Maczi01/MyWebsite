@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Link} from "react-router-dom";
 
 const IntroWrapper = styled.div`
-  //margin: 100px;
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   //width: 150px;
@@ -11,28 +11,15 @@ const IntroWrapper = styled.div`
 const StyledLink = styled(Link)`
   text-decoration: none;
   text-align: center;
-  color: black;
+  color: ${({theme}) => theme.colors.yellow};
   width: 6em;
   height: 3em;
   display: inline-block;
   text-transform: uppercase;
-  //padding: 4px 5px;
+  padding: 4px 5px;
   font-weight: 600;
   font-size: 14px; 
-            &::after {
-                content: '/';
-                color: ${({theme}) => theme.colors.lightgray};
-                font-weight: 400;
-            }
-            
-            &::before {
-                margin-right: 10px;
-            }
-
-            &::after {
-                margin-left: 10px;
-            }
-            
+  margin: 10px;   
 `
 const IntroLinks = () => (
     <IntroWrapper>

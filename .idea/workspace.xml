@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/i.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/HomeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/HomeContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IntroLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IntroLinks.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,15 +52,15 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/Pshemcio/portfolio" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\components" />
-      <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Projects" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\assets" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Home" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Contact" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Resume" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\components" />
+      <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Projects" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,7 +95,7 @@
       <workItem from="1621285749108" duration="4834000" />
       <workItem from="1621352643445" duration="9284000" />
       <workItem from="1621784090494" duration="1966000" />
-      <workItem from="1621978715643" duration="14486000" />
+      <workItem from="1621978715643" duration="18022000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -228,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622051383192</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Changes in main container">
+      <created>1622060654858</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1622060654859</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added Typewritter npm pack">
+      <created>1622060692230</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1622060692230</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +284,8 @@
     <MESSAGE value="Removed css file" />
     <MESSAGE value="Changes in forms - contact and resume" />
     <MESSAGE value="Added neon buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added neon buttons" />
+    <MESSAGE value="Changes in main container" />
+    <MESSAGE value="Added Typewritter npm pack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Typewritter npm pack" />
   </component>
 </project>
