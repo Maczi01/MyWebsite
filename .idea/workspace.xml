@@ -4,9 +4,10 @@
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +93,7 @@
       <workItem from="1621285749108" duration="4834000" />
       <workItem from="1621352643445" duration="9284000" />
       <workItem from="1621784090494" duration="1966000" />
-      <workItem from="1621978715643" duration="10461000" />
+      <workItem from="1621978715643" duration="14486000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -220,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621550371155</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added neon buttons">
+      <created>1622051383191</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1622051383192</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +267,7 @@
     <MESSAGE value="Added logic to send email." />
     <MESSAGE value="Removed css file" />
     <MESSAGE value="Changes in forms - contact and resume" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in forms - contact and resume" />
+    <MESSAGE value="Added neon buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added neon buttons" />
   </component>
 </project>
