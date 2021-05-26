@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/uk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/instaico.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/strava.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +95,7 @@
       <workItem from="1621285749108" duration="4834000" />
       <workItem from="1621352643445" duration="9284000" />
       <workItem from="1621784090494" duration="1966000" />
-      <workItem from="1621978715643" duration="21003000" />
+      <workItem from="1621978715643" duration="22062000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -268,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622067543233</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added flags">
+      <created>1622068013114</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1622068013114</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +300,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Start working on portfolio" />
     <MESSAGE value="Added pages (Home, projects, resume)" />
     <MESSAGE value="Added some content to pages." />
     <MESSAGE value="Added Navbar" />
@@ -314,6 +324,7 @@
     <MESSAGE value="Added glow text to about site" />
     <MESSAGE value="Added Simple sidebar and buttonicon" />
     <MESSAGE value="Added letter (as temporary logo)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added letter (as temporary logo)" />
+    <MESSAGE value="Added flags" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added flags" />
   </component>
 </project>

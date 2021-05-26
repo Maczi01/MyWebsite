@@ -88,10 +88,10 @@ const StyledNavLink = styled(NavLink)`
   //   }
 `;
 
-const StyledFlag = styled.button`
+const s = styled.button`
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 20px;
   background-image: url(${({ icon }) => icon});
   background-repeat: no-repeat;
@@ -103,6 +103,14 @@ const StyledFlag = styled.button`
   }
 `;
 
+const StyledFlag = styled.img`
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+`;
+
 const Navbar = () => (
     <NavbarWrapper>
         <StyledNavLink exact to="/">Główna</StyledNavLink><br/>
@@ -110,9 +118,9 @@ const Navbar = () => (
         <StyledNavLink to="/projects" activeclass="active">Projekty</StyledNavLink><br/>
         <StyledNavLink to="/resume" activeclass="active">Moje CV</StyledNavLink><br/>
         <StyledNavLink to="/contact" activeclass="active">Kontakt</StyledNavLink><br/>
-        <StyledFlag icon={uk}/>
-        <StyledFlag icon={ie}/>
-        <StyledFlag icon={pl}/>
+        <StyledFlag src={uk}/>
+        <StyledFlag src={ie}/>
+        <StyledFlag src={pl}/>
     </NavbarWrapper>
 );
 

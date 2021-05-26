@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import ButtonIcon from "./ButtonIcon";
 import githubico from '../assets/githubico.svg'
+import strava from '../assets/strava.svg'
+import instaico from '../assets/instaico.svg'
 import letter from '../assets/letter.svg'
+import linkedin from '../assets/linkedin.svg'
 import {NavLink} from "react-router-dom";
 
 const StyledWrapper = styled.nav`
@@ -14,7 +17,7 @@ const StyledWrapper = styled.nav`
       background-color: ${({theme}) => theme.colors.yellow};
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
 `;
 
@@ -50,10 +53,13 @@ const Sidebar = () => (
                 <ButtonIcon as={NavLink} to="/notes" icon={githubico} activeclass="active" />
             </li>
             <li>
-                <ButtonIcon as={NavLink} to="/twitters" icon={githubico} activeclass="active" />
+                <ButtonIcon as={NavLink} to="/twitters" icon={instaico} activeclass="active" />
             </li>
             <li>
-                <ButtonIcon as={NavLink} to="/articles" icon={githubico} activeclass="active" />
+                <ButtonIcon as={NavLink} to="/articles" icon={strava} activeclass="active" />
+            </li>
+            <li>
+                <ButtonIcon as={NavLink} to="/articles" icon={linkedin} activeclass="active" />
             </li>
         </StyledLinksList>
         {/*<StyledLogoutButton as={NavLink} to="/login" icon={logoutIcon} />*/}
