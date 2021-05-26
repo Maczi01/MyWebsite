@@ -6,10 +6,10 @@ import TypeWriterEffect from 'react-typewriter-effect';
 
 const IntroWrapper = styled.div`
   margin: 50px 100px 0 40px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: flex;
   justify-content: flex-start;
-  width: 600px;
+  width: 40vw;
   height: 220px;
   font-weight: bold;
   color: ${({theme}) => theme.colors.yellow};
@@ -18,7 +18,7 @@ const IntroWrapper = styled.div`
     0 0 0.250em ${({theme}) => theme.colors.yellow},
     0 0 0.5em ${({theme}) => theme.colors.yellow},
     0 0 0.75em ${({theme}) => theme.colors.yellow},
-    0 0 1em ${({theme}) => theme.colors.yellow}
+    0 0 1em ${({theme}) => theme.colors.yellow};
 `
 
 

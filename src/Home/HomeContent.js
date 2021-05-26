@@ -2,6 +2,7 @@ import MainContainer from "../components/MainContainer";
 import Intro from "../components/Intro";
 import IntroLinks from "../components/IntroLinks";
 import styled from "styled-components";
+import me from '../assets/me.png';
 
 const HomeWrapper = styled.div`
      width: 80vw; 
@@ -18,9 +19,9 @@ const IntroWrapper = styled.div`
 
 const Image = styled.img`
     justify-content: center;
-    margin: 0;
-    width: 150px;
-    height: 150px;
+    margin: 50px 100px 0 40px;
+    width: 400px;
+    height: 400px;
     transition: all .6s ease 0s;
 `;
 
@@ -31,8 +32,8 @@ const HomeContent = () => (
             <IntroWrapper>
                 <Intro/>
                 <IntroLinks/>
-                <Image src={me} alt="authors face"/>
             </IntroWrapper>
+            <Image src={me} alt="authors face"/>
         </HomeWrapper>
     </MainContainer>
 )
