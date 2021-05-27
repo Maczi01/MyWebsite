@@ -1,20 +1,23 @@
 import MainContainer from "../components/MainContainer";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {send} from "emailjs-com";
 import {useState} from 'react';
+import Title from "../components/Title";
+import { TextReveal } from "../components/ContentReveal";
 
-const FormWrapper = styled.div`
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin: 0 auto;
-      width: 50vw;
+const FormWrapper = styled.form`
+    position: relative;
+    max-width: 60vw;
+    margin: 0 auto;
+`;
+
+const InputsWrapper = styled.div`
+    position: relative;
 `;
 
 const StyledLabel = styled.label`
-      background-color: blue;
-      color: red;
+      background-color: black;
+      color: yellow;
       text-align: center;
       justify-content: center;  
       transition: 0.2s ease-out all;
@@ -32,21 +35,45 @@ const FormItem = styled.div`
       display: flex;
 `;
 
-const StyledInput = styled.input`
+// const StyledInput = styled.input`
+//     display: block;
+//     appearance: none;
+//     outline: 0;
+//     border: 1px solid white;
+//     width: 300px;
+//     border-radius: 3px;
+//     margin: 6px;
+//     text-align: center;
+//     font-size: 18px;
+//     color: black;
+//     transition-duration: 0.25s;
+//     font-weight: 300;
+//     background-color: greenyellow;
+// `;
+
+
+
+const formBase = css`
     display: block;
-    appearance: none;
-    outline: 0;
-    border: 1px solid white;
-    width: 300px;
-    border-radius: 3px;
-    margin: 6px;
-    text-align: center;
-    font-size: 18px;
-    color: black;
-    transition-duration: 0.25s;
-    font-weight: 300;
-    background-color: greenyellow;
+    width: 100%;
+    background-color: ${({theme}) => theme.colors.gray};
+    color: ${({theme}) => theme.colors.yellow};;
+    border: none;
+    padding: 15px;
+    outline: none;
+    margin: 4px 0 24px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity .6s .1s ease-in-out;
+
+    //&.is-inview {
+    //    opacity: 1;
+    //}
 `;
+
+const StyledInput = styled.input`
+    ${formBase};
+`
 
 const SERVICE_ID = "service_qzsarwb";
 const TEMPLATE_ID = process.env.REACT_APP_FORM_TEMPLATE_KEY;
@@ -108,52 +135,35 @@ const ResumeContent = () => {
     }
 
 
-
     return (
         <>
-            <MainContainer>
-                <h2>
-                    <strong>
-                        Pobierz moje CV
-                    </strong>
-                </h2>
-                <p>
-                    Potrzebujesz moje CV? Oczywiście możesz je pobrać. Nie chcę jednak, by moje dane latały gdzieś po internecie.
-                    Jeśli pobierasz moje CV, pozostaw prosze swoje dane.
-                </p>
-                <form onSubmit={sendEmail}>
-                    <label>Name</label>
-                    <input
+        <MainContainer>
+            <Title>
+                Pobierz moje CV
+            </Title>
+            <p>
+                Potrzebujesz moje CV? Oczywiście możesz je pobrać. Nie chcę jednak, by moje dane latały gdzieś
+                po internecie.
+                Jeśli pobierasz moje CV, pozostaw prosze swoje dane.
+            </p>
+            <FormWrapper onSubmit={sendEmail}>
+                <InputsWrapper>
+                    <StyledLabel htmlFor="from_name">
+                        <TextReveal data-scroll delay={.2} transparent>
+                            Name:
+                        </TextReveal>
+                    </StyledLabel>
+                    <StyledInput
                         type='text'
                         name='from_name'
                         placeholder='Jak Ci na imie?'
                         value={toSend.from_name}
                         onChange={handleChange}
+                        data-scroll
                     />
-                    <input
-                        type='email'
-                        name='to_name'
-                        placeholder='Twoj mail?'
-                        value={toSend.to_name}
-                        onChange={handleChange}
-                    />
-
-
-                    <select
-                        name='goal'
-                        value={toSend.goal}
-                        onChange={handleChange}
-                    >
-                        <option label="just check" value="just check"/>
-                        <option label="I have job for you" value="I have job for you"/>
-                        <option label="photo" value="photo"/>
-                    </select>
-                    <label>Email</label>
-                    <input type="submit"
-                        // isSubmitted={isSubmitted}
-                           value="Pobieram Twoje CV"/>
-                </form>
-            </MainContainer>
+                </InputsWrapper>
+        </FormWrapper>
+        </MainContainer>
         </>
     );
 }

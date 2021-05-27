@@ -1,6 +1,7 @@
 import MainContainer from "../components/MainContainer";
 import Title from "../components/Title";
 import styled from "styled-components";
+import AboutText from "../components/AboutText";
 
 const AboutTitle = styled.h3`
   font-size: 4rem;
@@ -12,13 +13,6 @@ const AboutTitle = styled.h3`
   color: ${({theme}) => theme.colors.yellow};
 `;
 
-const AboutText = styled.p`
-  display: flex;
-  padding: 10px;
-  margin: 20px;
-  justify-content: center;
-  color: ${({theme}) => theme.colors.yellow};
-`;
 
 const AboutContent = () => (
     <MainContainer>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import TypeWriterEffect from 'react-typewriter-effect';
 
 const TitleWrapper = styled.div`
-  font-size: 6rem;
+  font-size: 5rem;
   display: flex;
   padding: 10px;
   margin: 20px;

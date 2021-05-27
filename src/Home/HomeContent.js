@@ -29,11 +29,11 @@ const Image = styled.img`
 const HomeContent = () => (
     <MainContainer>
         <HomeWrapper>
+            <Image src={me} alt="authors face"/>
             <IntroWrapper>
                 <Intro/>
                 <IntroLinks/>
             </IntroWrapper>
-            <Image src={me} alt="authors face"/>
         </HomeWrapper>
     </MainContainer>
 )
