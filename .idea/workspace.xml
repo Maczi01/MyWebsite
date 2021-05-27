@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/form/StyledInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/StyledLabel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/StyledOption.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/StyledSelect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/StyledSubmit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/Form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/FormWrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/InputsWrapper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Resume/ResumeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resume/ResumeContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContentReveal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentReveal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +95,7 @@
       <workItem from="1621352643445" duration="9284000" />
       <workItem from="1621784090494" duration="1966000" />
       <workItem from="1621978715643" duration="22062000" />
-      <workItem from="1622115865052" duration="7198000" />
+      <workItem from="1622115865052" duration="8349000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -304,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622118581738</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Save form componnet as indemendent">
+      <created>1622128979812</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1622128979814</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,8 +328,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Home page" />
-    <MESSAGE value="Changes in global theme" />
     <MESSAGE value="Added Typical" />
     <MESSAGE value="Added intro and intro links" />
     <MESSAGE value="Added few new components" />
@@ -350,6 +351,8 @@
     <MESSAGE value="Changes in sidebar" />
     <MESSAGE value="Changes in about, new flags icons" />
     <MESSAGE value="Functional component AboutText moved to component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functional component AboutText moved to component" />
+    <MESSAGE value="Save form componnet as indemendent" />
+    <MESSAGE value="Save Form elements as components in files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save Form elements as components in files" />
   </component>
 </project>
