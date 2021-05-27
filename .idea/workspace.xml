@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="Added more info to main page, added component skills table">
-      <change afterPath="$PROJECT_DIR$/src/components/SkillsContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SkillsTable.js" afterDir="false" />
+    <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/HomeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/HomeContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SkillsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SkillsContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +95,7 @@
       <workItem from="1621784090494" duration="1966000" />
       <workItem from="1621978715643" duration="22062000" />
       <workItem from="1622115865052" duration="9047000" />
-      <workItem from="1622138108903" duration="8061000" />
+      <workItem from="1622138108903" duration="10778000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -342,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622143530211</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added first version of skills table">
+      <created>1622152821475</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1622152821475</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +370,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added contact form (very first version)" />
     <MESSAGE value="Added email js" />
     <MESSAGE value="Sending email (provisional) works ok." />
     <MESSAGE value="Changes in placeholder" />
@@ -388,6 +394,7 @@
     <MESSAGE value="Changes in Project page" />
     <MESSAGE value="Changes in home content - add more description" />
     <MESSAGE value="Added more info to main page, added component skills table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more info to main page, added component skills table" />
+    <MESSAGE value="Added first version of skills table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added first version of skills table" />
   </component>
 </project>
