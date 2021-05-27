@@ -3,6 +3,7 @@ import styled, { } from 'styled-components';
 export const TextReveal = styled.span`
     font-family: inherit;
     display: block;
+    margin: 0 0 20px 0;
     opacity: ${(props) => (props.transparent ? 0 : 1)};
     transform: translateY(${(props) =>
         typeof props.shift === 'number' ? (props.shift * 100).toString() + '%' : '100%'});

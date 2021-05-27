@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AboutText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentReveal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/StyledInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/StyledLabel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/StyledOption.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/StyledSelect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/StyledSubmit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/About/AboutContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/About/AboutContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/HomeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/HomeContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Resume/ResumeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resume/ResumeContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentReveal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentReveal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/form" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -57,11 +59,11 @@
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Projects" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\components\form" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\components" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\assets\flags" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\assets" />
       <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Home" />
-      <recent name="C:\Users\Admin\WebstormProjects\mywebsite\src\Contact" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -97,7 +99,7 @@
       <workItem from="1621352643445" duration="9284000" />
       <workItem from="1621784090494" duration="1966000" />
       <workItem from="1621978715643" duration="22062000" />
-      <workItem from="1622115865052" duration="2559000" />
+      <workItem from="1622115865052" duration="7198000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -295,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622117208610</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Functional component AboutText moved to component">
+      <created>1622118581738</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1622118581738</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +325,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Navbar" />
     <MESSAGE value="Added Home page" />
     <MESSAGE value="Changes in global theme" />
     <MESSAGE value="Added Typical" />
@@ -341,6 +349,7 @@
     <MESSAGE value="Added flags" />
     <MESSAGE value="Changes in sidebar" />
     <MESSAGE value="Changes in about, new flags icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in about, new flags icons" />
+    <MESSAGE value="Functional component AboutText moved to component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functional component AboutText moved to component" />
   </component>
 </project>

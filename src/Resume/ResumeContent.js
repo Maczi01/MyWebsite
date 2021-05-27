@@ -1,13 +1,19 @@
 import MainContainer from "../components/MainContainer";
 import styled, {css} from "styled-components";
 import {send} from "emailjs-com";
-import {useState} from 'react';
+import React, {useState} from 'react';
 import Title from "../components/Title";
-import { TextReveal } from "../components/ContentReveal";
+import {TextReveal} from "../components/ContentReveal";
+import AboutText from "../components/AboutText";
+import StyledSubmit from "../components/form/StyledSubmit";
+import StyledLabel from "../components/form/StyledLabel";
+import StyledInput from "../components/form/StyledInput";
+import StyledOption from "../components/form/StyledOption";
+import StyledSelect from "../components/form/StyledSelect";
 
 const FormWrapper = styled.form`
     position: relative;
-    max-width: 60vw;
+    max-width: 600px;
     margin: 0 auto;
 `;
 
@@ -15,72 +21,11 @@ const InputsWrapper = styled.div`
     position: relative;
 `;
 
-const StyledLabel = styled.label`
-      background-color: black;
-      color: yellow;
-      text-align: center;
-      justify-content: center;  
-      transition: 0.2s ease-out all;
-      font-size: 18px;
-      height: 60px;
-      width: 300px;
-      margin: 6px;
-      display: flex;
-      text-decoration: none;
-      align-items: center;
-`;
-
-const FormItem = styled.div`
-      width: 100%;
-      display: flex;
-`;
-
-// const StyledInput = styled.input`
-//     display: block;
-//     appearance: none;
-//     outline: 0;
-//     border: 1px solid white;
-//     width: 300px;
-//     border-radius: 3px;
-//     margin: 6px;
-//     text-align: center;
-//     font-size: 18px;
-//     color: black;
-//     transition-duration: 0.25s;
-//     font-weight: 300;
-//     background-color: greenyellow;
-// `;
-
-
-
-const formBase = css`
-    display: block;
-    width: 100%;
-    background-color: ${({theme}) => theme.colors.gray};
-    color: ${({theme}) => theme.colors.yellow};;
-    border: none;
-    padding: 15px;
-    outline: none;
-    margin: 4px 0 24px;
-    font-size: 16px;
-    opacity: 0;
-    transition: opacity .6s .1s ease-in-out;
-
-    //&.is-inview {
-    //    opacity: 1;
-    //}
-`;
-
-const StyledInput = styled.input`
-    ${formBase};
-`
-
 const SERVICE_ID = "service_qzsarwb";
 const TEMPLATE_ID = process.env.REACT_APP_FORM_TEMPLATE_KEY;
 const USER_ID = process.env.REACT_APP_FORM_USER_KEY;
 
 const ResumeContent = () => {
-
 
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
@@ -132,39 +77,74 @@ const ResumeContent = () => {
                 setSubmitInfoMessage("Something wrong, use my email. :(");
                 setIsReadyToSubmit(false);
             });
-    }
+    };
 
 
     return (
         <>
-        <MainContainer>
-            <Title>
-                Pobierz moje CV
-            </Title>
-            <p>
-                Potrzebujesz moje CV? Oczywiście możesz je pobrać. Nie chcę jednak, by moje dane latały gdzieś
-                po internecie.
-                Jeśli pobierasz moje CV, pozostaw prosze swoje dane.
-            </p>
-            <FormWrapper onSubmit={sendEmail}>
-                <InputsWrapper>
-                    <StyledLabel htmlFor="from_name">
-                        <TextReveal data-scroll delay={.2} transparent>
-                            Name:
-                        </TextReveal>
-                    </StyledLabel>
-                    <StyledInput
-                        type='text'
-                        name='from_name'
-                        placeholder='Jak Ci na imie?'
-                        value={toSend.from_name}
-                        onChange={handleChange}
-                        data-scroll
-                    />
-                </InputsWrapper>
-        </FormWrapper>
-        </MainContainer>
+            <MainContainer>
+                <Title>
+                    Pobierz moje CV
+                </Title>
+                <AboutText>
+                    Potrzebujesz moje CV? Oczywiście możesz je pobrać. Nie chcę jednak, by moje dane latały gdzieś
+                    po internecie.
+                    Jeśli pobierasz moje CV, pozostaw prosze swoje dane.
+                </AboutText>
+                <FormWrapper onSubmit={sendEmail}>
+                    <InputsWrapper>
+                        <StyledLabel htmlFor="from_name">
+                            <p data-scroll delay={.3} transparent>
+                                Name:
+                            </p>
+                        </StyledLabel>
+                        <StyledInput
+                            type='text'
+                            name='from_name'
+                            placeholder='Jak Ci na imie?'
+                            value={toSend.from_name}
+                            onChange={handleChange}
+                            data-scroll
+                        />
+                    </InputsWrapper>
+
+                    <InputsWrapper>
+                        <StyledLabel htmlFor="from_name">
+                            <p data-scroll delay={.3} transparent>
+                                Email:
+                            </p>
+                        </StyledLabel>
+                        <StyledInput
+                            type='email'
+                            name='to_name'
+                            placeholder='Twoj mail?'
+                            value={toSend.to_name}
+                            onChange={handleChange}
+                            data-scroll
+                        />
+                    </InputsWrapper>
+
+                    <InputsWrapper>
+                        <StyledLabel htmlFor="from_name">
+                            <p data-scroll delay={.3} transparent>
+                                Cel pobrania CV:
+                            </p>
+                        </StyledLabel>
+                        <StyledSelect>
+                            <StyledOption label="just check" value="just check"/>
+                            <StyledOption label="I have job for you" value="I have job for you"/>
+                            <StyledOption label="I want test your form" value="I want test your form"/>
+                        </StyledSelect>
+                    </InputsWrapper>
+                    <StyledSubmit type="submit"
+                        // isSubmitted={isSubmitted}
+                                  value="Pobieram Twoje CV!">
+                        Pobieram Twoje CV
+                    </StyledSubmit>
+                </FormWrapper>
+            </MainContainer>
         </>
     );
-}
+};
+
 export default ResumeContent;
