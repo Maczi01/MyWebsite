@@ -3,6 +3,7 @@ import Intro from "../components/Intro";
 import IntroLinks from "../components/IntroLinks";
 import styled from "styled-components";
 import me from '../assets/me.png';
+import Title from "../components/Title";
 
 const HomeWrapper = styled.div`
      width: 80vw; 
@@ -34,6 +35,11 @@ const HomeContent = () => (
                 <Intro/>
                 <IntroLinks/>
             </IntroWrapper>
+
+            <Title>
+                Cześć!
+            </Title>
+
         </HomeWrapper>
     </MainContainer>
 )
