@@ -9,19 +9,11 @@ const ProjectItemWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   position: relative;
-  border-radius: 15px;
-  min-height: 30rem;
+  //border-radius: 15px;
+  min-height: 20rem;
 `
 
 const ProjectThumbnail = styled.img`
-    //justify-content: center;
-    //margin: 0;
-    //align-items: center;
-    ////width: 80%;
-    ////height: 150px;
-    //border-radius: 8px;
-    //transition: all .6s ease 0s; 
-    
      position: absolute;
      max-width: 100%;
      width: 100%;
@@ -29,16 +21,11 @@ const ProjectThumbnail = styled.img`
      top: 50%;     
      left: 50%;
      transform: translate( -50%, -50%);
-`
-// const ProjectDescriptionContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-// `
+`;
+
 const ProjectTitle = styled.h3`
   font-size: 4rem;
   display: flex;
-  padding: 10px;
-  margin: 20px;
   color: ${({theme}) => theme.colors.white};
   justify-content: center;
   font-weight: bold;
@@ -47,13 +34,7 @@ const ProjectTitle = styled.h3`
   bottom: 0;
   left: 50%;
   text-shadow: 0 0 8px #4927ff;
-`
-// const ProjectDescription = styled.p`
-//   display: flex;
-//   padding: 10px;
-//   margin: 20px;
-//   justify-content: center;
-// `
+`;
 
 const Image = styled.img`
      position: absolute;
@@ -63,12 +44,12 @@ const Image = styled.img`
      top: 50%;     
      left: 50%;
      transform: translate( -50%, -50%);
-`
+`;
 
 const ProjectItem = ({image, title}) => (
     <ProjectItemWrapper>
         <ProjectThumbnail src={image}/>
-        <ProjectTitle>{title}</ProjectTitle>
+        {/*<ProjectTitle>{title}</ProjectTitle>*/}
     </ProjectItemWrapper>
 );
 

@@ -9,20 +9,28 @@ import equipymanager from '../assets/equipymanager.png'
 
 const ProjectsContainerWrapper = styled.div`
   padding: 0;
+  //margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
-  row-gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 0;
+  row-gap: 0;
   list-style-type: none;
 `
 
 const ProjectsList = () => (
     <ProjectsContainerWrapper>
-        <ProjectItem image={wheatherapp} title={'Wheather app'}/>
-        <ProjectItem image={attentioncontrol} title={'Attention control'}/>
-        <ProjectItem image={library} title={'Library'}/>
-        <ProjectItem image={portfolio} title={'Portfolio'}/>
-        <ProjectItem image={shoppinglist} title={'Shopping list'}/>
+        {/*<ProjectItem image={wheatherapp} title={'Wheather app'}/>*/}
+        {/*<ProjectItem image={attentioncontrol} title={'Attention control'}/>*/}
+        {/*<ProjectItem image={library} title={'Library'}/>*/}
+        {/*<ProjectItem image={portfolio} title={'Portfolio'}/>*/}
+        {/*<ProjectItem image={shoppinglist} title={'Shopping list'}/>*/}
+        <ProjectItem image={equipymanager} title={'Equipy manager'}/>
+        <ProjectItem image={equipymanager} title={'Equipy manager'}/>
+        <ProjectItem image={equipymanager} title={'Equipy manager'}/>
+        <ProjectItem image={equipymanager} title={'Equipy manager'}/>
+        <ProjectItem image={equipymanager} title={'Equipy manager'}/>
+        <ProjectItem image={equipymanager} title={'Equipy manager'}/>
+        <ProjectItem image={equipymanager} title={'Equipy manager'}/>
         <ProjectItem image={equipymanager} title={'Equipy manager'}/>
     </ProjectsContainerWrapper>
 );
