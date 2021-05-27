@@ -8,20 +8,22 @@ import {send} from "emailjs-com";
 import React, {useState} from 'react';
 import InputsWrapper from "./InputsWrapper";
 import FormWrapper from "./FormWrapper";
+import StyledTextarea from "./StyledTextarea";
 
-const ResumeForm = () => {
-
+const ContactForm = () => {
 
     const SERVICE_ID = "service_qzsarwb";
     const TEMPLATE_ID = process.env.REACT_APP_FORM_TEMPLATE_KEY;
     const USER_ID = process.env.REACT_APP_FORM_USER_KEY;
 
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
+    const [submitInfoMessage, setSubmitInfoMessage] = useState("");
 
     const [toSend, setToSend] = useState({
         from_name: '',
         message: '',
         to_name: '',
-        goal: 'check'
     });
 
     const [errors, setErrors] = useState({
@@ -32,8 +34,8 @@ const ResumeForm = () => {
     const resetFields = () => {
         setToSend({
             from_name: '',
+            message: '',
             to_name: '',
-            goal: ''
         });
 
         setErrors({
@@ -63,13 +65,7 @@ const ResumeForm = () => {
                 setSubmitInfoMessage("Something wrong, use my email. :(");
                 setIsReadyToSubmit(false);
             });
-    };
-
-
-    const [isSubmitted, setIsSubmitted] = useState(false);
-    const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
-    const [submitInfoMessage, setSubmitInfoMessage] = useState("");
-
+    }
     return (
         <FormWrapper>
             <InputsWrapper>
@@ -107,22 +103,24 @@ const ResumeForm = () => {
             <InputsWrapper>
                 <StyledLabel htmlFor="from_name">
                     <p data-scroll delay={.3} transparent>
-                        Cel pobrania CV:
+                        Wiadomość:
                     </p>
                 </StyledLabel>
-                <StyledSelect>
-                    <StyledOption label="just check" value="just check"/>
-                    <StyledOption label="I have job for you" value="I have job for you"/>
-                    <StyledOption label="I want test your form" value="I want test your form"/>
-                </StyledSelect>
+                <StyledTextarea
+                    type='text'
+                    name='message'
+                    placeholder='Wiadomość'
+                    value={toSend.message}
+                    onChange={handleChange}
+                />
             </InputsWrapper>
             <StyledSubmit type="submit"
                 // isSubmitted={isSubmitted}
                           value="Pobieram Twoje CV!">
-                Pobieram Twoje CV
+                Wyślij wiadomość
             </StyledSubmit>
         </FormWrapper>
 
     );
 }
-export default ResumeForm;
+export default ContactForm;

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/form/ContactForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/StyledTextarea.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resume/ResumeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resume/ResumeContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/ResumeForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contact/ContactContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contact/ContactContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/ContactForm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +95,7 @@
       <workItem from="1621784090494" duration="1966000" />
       <workItem from="1621978715643" duration="22062000" />
       <workItem from="1622115865052" duration="9047000" />
-      <workItem from="1622138108903" duration="40000" />
+      <workItem from="1622138108903" duration="1179000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -314,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622130112315</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Changed form to resumeForm">
+      <created>1622138378250</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1622138378251</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +342,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Typical" />
     <MESSAGE value="Added intro and intro links" />
     <MESSAGE value="Added few new components" />
     <MESSAGE value="Changes in Projects section" />
@@ -360,6 +366,7 @@
     <MESSAGE value="Functional component AboutText moved to component" />
     <MESSAGE value="Save form componnet as indemendent" />
     <MESSAGE value="Save Form elements as components in files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save Form elements as components in files" />
+    <MESSAGE value="Changed form to resumeForm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed form to resumeForm" />
   </component>
 </project>
