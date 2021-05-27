@@ -22,7 +22,9 @@ const AboutText = styled.p`
 
 const AboutContent = () => (
     <MainContainer>
-        <Title/>
+        <Title>
+            O mnie
+        </Title>
         <AboutText>
             Nazywam się Mateusz, od kilku lat pracuje jako konstruktor w branży mechanicznej. Ukończyłem
             Inżynierię mechaniczną na Politechnice Wrocławskiej z tytułem magistra. Od kilku lat interesuje się

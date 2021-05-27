@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
-import uk from '../assets/uk.svg'
-import ie from '../assets/ie.svg'
-import pl from '../assets/pl.svg'
+import uk from '../assets/flags/uk.svg'
+import ie from '../assets/flags/ie.svg'
+import pl from '../assets/flags/pl.svg'
 
 const NavbarWrapper = styled.nav`
   display: flex;
