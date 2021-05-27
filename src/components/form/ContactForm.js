@@ -9,7 +9,7 @@ import React, {useState} from 'react';
 import InputsWrapper from "./InputsWrapper";
 import FormWrapper from "./FormWrapper";
 
-const Form = () => {
+const ResumeForm = () => {
 
 
     const SERVICE_ID = "service_qzsarwb";
@@ -125,4 +125,4 @@ const Form = () => {
 
     );
 }
-export default Form;
+export default ResumeForm;

@@ -10,7 +10,7 @@ import StyledLabel from "../components/form/StyledLabel";
 import StyledInput from "../components/form/StyledInput";
 import StyledOption from "../components/form/StyledOption";
 import StyledSelect from "../components/form/StyledSelect";
-import Form from "../components/form/Form";
+import ResumeForm from "../components/form/ResumeForm";
 
 // const FormWrapper = styled.form`
 //     position: relative;
@@ -92,7 +92,7 @@ const ResumeContent = () => {
                     po internecie.
                     Jeśli pobierasz moje CV, pozostaw prosze swoje dane.
                 </AboutText>
-                <Form/>
+                <ResumeForm/>
             </MainContainer>
         </>
     );
