@@ -31,6 +31,7 @@ const StyledLogoLink = styled(NavLink)`
     background-position: 50% 50%;
     background-size: 80%;
     border: none;
+    margin-top: 0;
     margin-bottom: 10vh;
 `;
 
@@ -46,20 +47,17 @@ const StyledLinksList = styled.ul`
 
 
 const Sidebar = () => (
-    <StyledWrapper >
-        <StyledLogoLink to="/" />
+    <StyledWrapper>
+        <StyledLogoLink to="/"/>
         <StyledLinksList>
             <li>
-                <ButtonIcon as={NavLink} to="/notes" icon={githubico} activeclass="active" />
+                <ButtonIcon as={NavLink} to="/notes" icon={githubico} activeclass="active"/>
             </li>
             <li>
-                <ButtonIcon as={NavLink} to="/twitters" icon={instaico} activeclass="active" />
+                <ButtonIcon as={NavLink} to="/twitters" icon={instaico} activeclass="active"/>
             </li>
             <li>
-                <ButtonIcon as={NavLink} to="/articles" icon={strava} activeclass="active" />
-            </li>
-            <li>
-                <ButtonIcon as={NavLink} to="/articles" icon={linkedin} activeclass="active" />
+                <ButtonIcon as={NavLink} to="/articles" icon={linkedin} activeclass="active"/>
             </li>
         </StyledLinksList>
         {/*<StyledLogoutButton as={NavLink} to="/login" icon={logoutIcon} />*/}

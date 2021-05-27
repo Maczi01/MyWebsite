@@ -17,12 +17,12 @@ const TitleWrapper = styled.div`
     0 0 1em ${({theme}) => theme.colors.yellow};
 `
 
-const Title = () => (
+const Title = ({children}) => (
     <TitleWrapper>
         <TypeWriterEffect
             startDelay={100}
             cursorColor='#FFDF6C'
-            text='O mnie'
+            text={children}
             typeSpeed={100}
             loop={false}
             nextTextDelay={2000}

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/instaico.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/strava.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,6 +91,7 @@
       <workItem from="1621352643445" duration="9284000" />
       <workItem from="1621784090494" duration="1966000" />
       <workItem from="1621978715643" duration="22062000" />
+      <workItem from="1622115865052" duration="539000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
