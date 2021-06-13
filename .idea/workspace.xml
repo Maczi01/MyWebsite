@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SkillsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SkillsContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,10 @@
       <workItem from="1621784090494" duration="1966000" />
       <workItem from="1621978715643" duration="22062000" />
       <workItem from="1622115865052" duration="9047000" />
-      <workItem from="1622138108903" duration="10778000" />
+      <workItem from="1622138108903" duration="12445000" />
+      <workItem from="1622376394824" duration="3033000" />
+      <workItem from="1623060773761" duration="861000" />
+      <workItem from="1623575410627" duration="2564000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -349,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622152821475</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Added icons (styled icons)">
+      <created>1622155512465</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1622155512465</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +379,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added email js" />
     <MESSAGE value="Sending email (provisional) works ok." />
     <MESSAGE value="Changes in placeholder" />
     <MESSAGE value="Added logic to send email." />
@@ -395,6 +403,7 @@
     <MESSAGE value="Changes in home content - add more description" />
     <MESSAGE value="Added more info to main page, added component skills table" />
     <MESSAGE value="Added first version of skills table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added first version of skills table" />
+    <MESSAGE value="Added icons (styled icons)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added icons (styled icons)" />
   </component>
 </project>
