@@ -10,6 +10,7 @@ import {lightTheme} from './theme/theme'
 import styled from "styled-components";
 import GlobalStyle from "./theme/GlobalStyle";
 import ContactContent from "./Contact/ContactContent";
+import ReactPageScroller from 'react-page-scroller';
 
 
 const StyledApp = styled.div`
@@ -25,21 +26,23 @@ function App() {
                 <Router>
                     <Navbar/>
                     <Switch>
-                        <Route exact path='/'>
-                            <HomeContent/>
-                        </Route>
-                        <Route exact path='/about'>
-                            <AboutContent/>
-                        </Route>
-                        <Route path='/resume'>
-                            <ResumeContent/>
-                        </Route>
-                        <Route path='/projects'>
-                            <ProjectsContent/>
-                        </Route>
-                        <Route path='/contact'>
-                            <ContactContent/>
-                        </Route>
+                      <ReactPageScroller>
+                          <Route exact path='/'>
+                              <HomeContent/>
+                          </Route>
+                          <Route exact path='/about'>
+                              <AboutContent/>
+                          </Route>
+                          <Route path='/resume'>
+                              <ResumeContent/>
+                          </Route>
+                          <Route path='/projects'>
+                              <ProjectsContent/>
+                          </Route>
+                          <Route path='/contact'>
+                              <ContactContent/>
+                          </Route>
+                      </ReactPageScroller>
                     </Switch>
                 </Router>
             </StyledApp>

@@ -4,7 +4,7 @@ import React from "react";
 
 const Container = styled.div`
      width: 80vw; 
-     min-height:100vh;       
+     height:100vh;       
      display: flex;
      flex-direction: column;
      margin: 0 auto;
