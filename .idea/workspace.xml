@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +96,9 @@
       <workItem from="1622138108903" duration="12445000" />
       <workItem from="1622376394824" duration="3033000" />
       <workItem from="1623060773761" duration="861000" />
-      <workItem from="1623575410627" duration="4745000" />
+      <workItem from="1623575410627" duration="5828000" />
+      <workItem from="1623792593322" duration="574000" />
+      <workItem from="1623872740481" duration="2782000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -358,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622155512465</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Change height in container">
+      <created>1623711050772</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1623711050774</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +387,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Sending email (provisional) works ok." />
     <MESSAGE value="Changes in placeholder" />
     <MESSAGE value="Added logic to send email." />
     <MESSAGE value="Removed css file" />
@@ -404,6 +411,7 @@
     <MESSAGE value="Added more info to main page, added component skills table" />
     <MESSAGE value="Added first version of skills table" />
     <MESSAGE value="Added icons (styled icons)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added icons (styled icons)" />
+    <MESSAGE value="Change height in container" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change height in container" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useCallback, useContext, useState} from 'react';
 import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import AboutContent from "./About/AboutContent";
 import ResumeContent from "./Resume/ResumeContent";
@@ -15,36 +15,53 @@ import ReactPageScroller from 'react-page-scroller';
 
 const StyledApp = styled.div`
       background-color:  ${({theme}) => theme.colors.gray};
-
 `;
 
-function App() {
+const App = () => {
+
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(()=> {
+        setTimeout(()=> {
+            setIsLoaded(true)
+        }, 1000)
+    } )
+
     return (
         <ThemeProvider theme={lightTheme}>
             <StyledApp>
                 <GlobalStyle backgroundColor={lightTheme.backgroundColor}/>
-                <Router>
-                    <Navbar/>
-                    <Switch>
-                      <ReactPageScroller>
-                          <Route exact path='/'>
-                              <HomeContent/>
-                          </Route>
-                          <Route exact path='/about'>
-                              <AboutContent/>
-                          </Route>
-                          <Route path='/resume'>
-                              <ResumeContent/>
-                          </Route>
-                          <Route path='/projects'>
-                              <ProjectsContent/>
-                          </Route>
-                          <Route path='/contact'>
-                              <ContactContent/>
-                          </Route>
-                      </ReactPageScroller>
-                    </Switch>
-                </Router>
+                {
+                    isLoaded ?
+                        <Router>
+                            <Navbar/>
+                            <Switch>
+                                <ReactPageScroller>
+
+
+                                    <Route exact path='/'>
+                                        <HomeContent/>
+                                    </Route>
+                                    <Route exact path='/about'>
+                                        <AboutContent/>
+                                    </Route>
+                                    <Route path='/resume'>
+                                        <ResumeContent/>
+                                    </Route>
+                                    <Route path='/projects'>
+                                        <ProjectsContent/>
+                                    </Route>
+                                    <Route path='/contact'>
+                                        <ContactContent/>
+                                    </Route>
+                                </ReactPageScroller>
+                            </Switch>
+                        </Router>
+                        :
+                        <p> jjjk</p>
+
+                }
+
             </StyledApp>
         </ThemeProvider>
     );
