@@ -57,10 +57,10 @@ const HomeContent = () => (
     <MainContainer>
         <HomeWrapper>
             <Image src={me} alt="authors face"/>
-            <IntroWrapper>
-                <Intro/>
-                <IntroLinks/>
-            </IntroWrapper>
+            {/*<IntroWrapper>*/}
+            {/*    <Intro/>*/}
+            {/*    <IntroLinks/>*/}
+            {/*</IntroWrapper>*/}
         </HomeWrapper>
 
         <HomeTitle>
