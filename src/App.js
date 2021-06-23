@@ -1,4 +1,4 @@
-import React, {useCallback, useContext, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import AboutContent from "./About/AboutContent";
 import ResumeContent from "./Resume/ResumeContent";
@@ -25,7 +25,7 @@ const App = () => {
         setTimeout(()=> {
             setIsLoaded(true)
         }, 1000)
-    } )
+    },[] )
 
     return (
         <ThemeProvider theme={lightTheme}>
@@ -58,7 +58,7 @@ const App = () => {
                             </Switch>
                         </Router>
                         :
-                        <p> jjjk</p>
+                        <LoadingPage/>
 
                 }
 
