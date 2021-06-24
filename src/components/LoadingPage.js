@@ -27,16 +27,16 @@ const HomeTitle = styled.div`
     justify-content: flex-start;
     font-size: 5rem;
     display: flex;
-    padding: 10px;
-    margin: 20px;
+    //padding: 10px;
+    //margin: 20px;
     font-weight: bold;
-    color: ${({theme}) => theme.colors.yellow};
-    text-shadow: 
-    0 0 0.125em ${({theme}) => theme.colors.gray},
-    0 0 0.250em ${({theme}) => theme.colors.yellow},
-    0 0 0.5em ${({theme}) => theme.colors.yellow},
-    0 0 0.75em ${({theme}) => theme.colors.yellow},
-    0 0 1em ${({theme}) => theme.colors.yellow};
+    color: black
+    // text-shadow: 
+    // 0 0 0.125em ${({theme}) => theme.colors.gray},
+    // 0 0 0.250em ${({theme}) => theme.colors.yellow},
+    // 0 0 0.5em ${({theme}) => theme.colors.yellow},
+    // 0 0 0.75em ${({theme}) => theme.colors.yellow},
+    // 0 0 1em ${({theme}) => theme.colors.yellow};
 `;
 
 const HomeText = styled.p`
@@ -49,27 +49,40 @@ const HomeText = styled.p`
 `;
 
 const Container = styled.div`
-     width: 80vw; 
+     width: 100vw; 
      height:100vh;       
      display: flex;
      flex-direction: column;
      margin: 0 auto;
-     background: green
+     background: yellow;
+       position: relative;
+       background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+
+`;
+
+const Center = styled.div`
+    width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+     background: yellow;
      //background:white;
 `
 
 const LoadingPage = () => (
     <Container>
-        {/*<motion*/}
-        {/*    exit={{y: -1000}}*/}
-        {/*>*/}
-            <HomeTitle>
+        <HomeTitle>
+            <Center>
                 <CountUp
                     end={100}
                     duration={5}
                 />
-            </HomeTitle>
-        {/*</motion>*/}
+            </Center>
+        </HomeTitle>
     </Container>
 )
 

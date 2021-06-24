@@ -71,7 +71,9 @@ const App = () => {
 
                         :
                         <AnimatePresence
-                            exitBeforeEnter>
+                            exitBeforeEnter={true
+                            }
+                        >
                             <LoadingPage/>
                         </AnimatePresence>
                 }

@@ -6,6 +6,7 @@ import me from '../assets/me.png';
 import Title from "../components/Title";
 import AboutText from "../components/AboutText";
 import Skills from "../components/SkillsContainer";
+import PageTransitioning from "../components/PageTransitioning";
 
 const HomeWrapper = styled.div`
      width: 80vw; 
@@ -54,30 +55,33 @@ const HomeText = styled.p`
 `;
 
 const HomeContent = () => (
-    <MainContainer>
-        <HomeWrapper>
-            <Image src={me} alt="authors face"/>
-            {/*<IntroWrapper>*/}
-            {/*    <Intro/>*/}
-            {/*    <IntroLinks/>*/}
-            {/*</IntroWrapper>*/}
-        </HomeWrapper>
+   <>
+       <PageTransitioning/>
+       <MainContainer>
+           <HomeWrapper>
+               <Image src={me} alt="authors face"/>
+               {/*<IntroWrapper>*/}
+               {/*    <Intro/>*/}
+               {/*    <IntroLinks/>*/}
+               {/*</IntroWrapper>*/}
+           </HomeWrapper>
 
-        <HomeTitle>
-            Cześć!
-        </HomeTitle>
-        <HomeText>
-            Nazywam się Mateusz, od kilku lat pracuje jako konstruktor w branży mechanicznej. Ukończyłem
-            Inżynierię mechaniczną na Politechnice Wrocławskiej z tytułem magistra. Od kilku lat interesuje się
-            programowaniem, ze szczególnym uwzględnieniem projektowania aplikacji internetowych. W obszarze
-            moich zainteresowań są zagadnienia związane z frontendem - głównie React, a także z backednem
-            (Java i Spring).
-        </HomeText>
-        <HomeTitle>
-            Umiejętności
-        </HomeTitle>
-        <Skills/>
-    </MainContainer>
+           <HomeTitle>
+               Cześć!
+           </HomeTitle>
+           <HomeText>
+               Nazywam się Mateusz, od kilku lat pracuje jako konstruktor w branży mechanicznej. Ukończyłem
+               Inżynierię mechaniczną na Politechnice Wrocławskiej z tytułem magistra. Od kilku lat interesuje się
+               programowaniem, ze szczególnym uwzględnieniem projektowania aplikacji internetowych. W obszarze
+               moich zainteresowań są zagadnienia związane z frontendem - głównie React, a także z backednem
+               (Java i Spring).
+           </HomeText>
+           <HomeTitle>
+               Umiejętności
+           </HomeTitle>
+           <Skills/>
+       </MainContainer>
+       </>
 )
 
 export default HomeContent;
