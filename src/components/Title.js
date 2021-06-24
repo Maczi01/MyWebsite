@@ -9,12 +9,12 @@ const TitleWrapper = styled.div`
   justify-content: center;
   font-weight: bold;
   color: ${({theme})=> theme.colors.yellow};
-  text-shadow: 
-    0 0 0.125em ${({theme}) => theme.colors.gray},
-    0 0 0.250em ${({theme}) => theme.colors.yellow},
-    0 0 0.5em ${({theme}) => theme.colors.yellow},
-    0 0 0.75em ${({theme}) => theme.colors.yellow},
-    0 0 1em ${({theme}) => theme.colors.yellow};
+  // text-shadow: 
+  //   0 0 0.125em ${({theme}) => theme.colors.gray},
+  //   0 0 0.250em ${({theme}) => theme.colors.yellow},
+  //   0 0 0.5em ${({theme}) => theme.colors.yellow},
+  //   0 0 0.75em ${({theme}) => theme.colors.yellow},
+  //   0 0 1em ${({theme}) => theme.colors.yellow};
 `
 
 const Title = ({children}) => (

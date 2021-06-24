@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
+import {Route, BrowserRouter as Router, Switch, useLocation} from "react-router-dom";
 import AboutContent from "./About/AboutContent";
 import ResumeContent from "./Resume/ResumeContent";
 import ProjectsContent from "./Projects/ProjectsContent";
@@ -23,15 +23,30 @@ const App = () => {
 
     const [isLoaded, setIsLoaded] = useState(false);
 
+    const [counter, setCounter] = React.useState(0);
+    let location = useLocation();
     useEffect(() => {
-        setTimeout(() => {
-            setIsLoaded(true)
+        const timer = setInterval(() => {
+            setCounter(prevCount => prevCount + 1); // <-- Change this line!
+            if (counter >= 2) {
+                clearInterval(timer);
+                setIsLoaded(true);
+            }
         }, 1000);
+        return () => {
+            clearInterval(timer);
+        };
+    },);
 
-        return (() => {
-            setIsLoaded(false);
-        })
-    }, []);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setIsLoaded(true)
+    //     }, 1000);
+    //
+    //     return (() => {
+    //         setIsLoaded(false);
+    //     })
+    // }, []);
 
     return (
         <ThemeProvider theme={lightTheme}>
@@ -39,43 +54,37 @@ const App = () => {
                 <GlobalStyle backgroundColor={lightTheme.backgroundColor}/>
                 {
                     isLoaded ?
-                        <AnimatePresence
-                            exitBeforeEnter={true
-                            }>
+                        <>
+                            <AnimatePresence
+                                exitBeforeEnter={false}
+                            >
+                                    <Navbar/>
+                                    <Switch location={location} key={location.pathname}>
+                                        <ReactPageScroller>
 
-                            <Router>
-                                <Navbar/>
-                                <Switch>
-                                    <ReactPageScroller>
 
-
-                                        <Route exact path='/'>
-                                            <HomeContent/>
-                                        </Route>
-                                        <Route exact path='/about'>
-                                            <AboutContent/>
-                                        </Route>
-                                        <Route path='/resume'>
-                                            <ResumeContent/>
-                                        </Route>
-                                        <Route path='/projects'>
-                                            <ProjectsContent/>
-                                        </Route>
-                                        <Route path='/contact'>
-                                            <ContactContent/>
-                                        </Route>
-                                    </ReactPageScroller>
-                                </Switch>
-                            </Router>
-                        </AnimatePresence>
-
+                                            <Route  key="frfe" exact path='/'>
+                                                <HomeContent/>
+                                            </Route>
+                                            <Route exact path='/about'>
+                                                <AboutContent/>
+                                            </Route>
+                                            <Route path='/resume'>
+                                                <ResumeContent/>
+                                            </Route>
+                                            <Route path='/projects'>
+                                                <ProjectsContent/>
+                                            </Route>
+                                            <Route path='/contact'>
+                                                <ContactContent/>
+                                            </Route>
+                                        </ReactPageScroller>
+                                    </Switch>
+                            </AnimatePresence>
+                        </>
                         :
-                        <AnimatePresence
-                            exitBeforeEnter={true
-                            }
-                        >
-                            <LoadingPage/>
-                        </AnimatePresence>
+
+                        <LoadingPage counter={counter}/>
                 }
             </StyledApp>
         </ThemeProvider>

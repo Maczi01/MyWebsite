@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import { motion } from "framer-motion";
 
+// let {
+//     secondaryColor
+// } = Theme.colors;
 
 const variants = {
     initial: {
@@ -9,21 +12,21 @@ const variants = {
     animate: {
         bottom: "100vh",
         transition: {
-            duration: .7,
+            duration: 3.7,
             ease: [0.12, 1, 0.2, 1]
         }
     },
     exit: {
         opacity: 0,
         transition: {
-            duration: 1.1
+            duration: .1
         }
     },
     exitStop: {
         bottom: 0,
         transition: {
-            duration: 1.6,
-            delay: 1.9,
+            duration: .6,
+            delay: .9,
             ease: [0.12, 1, 0.2, 1]
         }
     }

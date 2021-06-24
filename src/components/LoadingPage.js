@@ -2,27 +2,6 @@ import styled from "styled-components";
 import CountUp from "react-countup";
 import {motion} from "framer-motion";
 
-const HomeWrapper = styled.div`
-     width: 80vw; 
-     min-height:100vh;       
-     display: flex;
-     flex-direction: row;
-     margin: 0 auto;
-`;
-
-const IntroWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-`;
-
-const Image = styled.img`
-    justify-content: center;
-    margin: 50px 100px 0 40px;
-    width: 400px;
-    height: 400px;
-    transition: all .6s ease 0s;
-`;
-
 const HomeTitle = styled.div`
     justify-content: flex-start;
     font-size: 5rem;
@@ -56,9 +35,6 @@ const Container = styled.div`
      margin: 0 auto;
      background: yellow;
        position: relative;
-       background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
 
 `;
 
@@ -73,14 +49,11 @@ const Center = styled.div`
      //background:white;
 `
 
-const LoadingPage = () => (
+const LoadingPage = ({counter}) => (
     <Container>
         <HomeTitle>
             <Center>
-                <CountUp
-                    end={100}
-                    duration={5}
-                />
+                {counter}
             </Center>
         </HomeTitle>
     </Container>
