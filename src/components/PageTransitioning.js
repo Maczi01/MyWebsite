@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-
-// let {
-//     secondaryColor
-// } = Theme.colors;
+import React from "react";
 
 const variants = {
     initial: {
@@ -22,17 +19,17 @@ const variants = {
             duration: .1
         }
     },
-    exitStop: {
-        bottom: 0,
-        transition: {
-            duration: .6,
-            delay: .9,
-            ease: [0.12, 1, 0.2, 1]
-        }
-    }
+    // exitStop: {
+    //     bottom: 0,
+    //     transition: {
+    //         duration: .6,
+    //         delay: .9,
+    //         ease: [0.12, 1, 0.2, 1]
+    //     }
+    // }
 };
 const TransitionHelper = styled(motion.div)`
-position: fixed;
+    position: fixed;
     left: 0;
     width: 100%;
     height: 100vh;

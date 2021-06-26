@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import CountUp from "react-countup";
 import {motion} from "framer-motion";
+import PageTransitioning from "./PageTransitioning";
 
 const HomeTitle = styled.div`
     justify-content: flex-start;
@@ -59,13 +60,13 @@ const Center = styled.div`
 `
 
 const LoadingPage = ({counter}) => (
-    <Container>
-        <HomeTitle>
-            <Center>
-                {counter}
-            </Center>
-        </HomeTitle>
-    </Container>
+        <Container>
+            <HomeTitle>
+                <Center>
+                    {counter}
+                </Center>
+            </HomeTitle>
+        </Container>
 )
 
 export default LoadingPage;

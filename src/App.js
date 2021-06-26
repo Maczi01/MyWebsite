@@ -44,7 +44,7 @@ const App = () => {
                 {
                     isLoaded ?
                         <>
-                            <AnimatePresence exitBeforeEnter>
+                            <AnimatePresence exitBeforeEnter initial={true}>
                                 <Router>
                                     <Navbar/>
                                     <Switch location={location} key={location.key}>
