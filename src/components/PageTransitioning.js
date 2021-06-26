@@ -13,7 +13,7 @@ const variants = {
         bottom: "100vh",
         transition: {
             duration: 3.7,
-            ease: [0.12, 1, 0.2, 1]
+            ease: [1.12, 1, 0.2, 1]
         }
     },
     exit: {
@@ -31,7 +31,6 @@ const variants = {
         }
     }
 };
-
 const TransitionHelper = styled(motion.div)`
 position: fixed;
     left: 0;

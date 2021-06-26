@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="Trying to fix animaton">
+    <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home/HomeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/HomeContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LoadingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageTransitioning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageTransitioning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +103,8 @@
       <workItem from="1623060773761" duration="861000" />
       <workItem from="1623575410627" duration="5828000" />
       <workItem from="1623792593322" duration="574000" />
-      <workItem from="1623872740481" duration="17312000" />
+      <workItem from="1623872740481" duration="23955000" />
+      <workItem from="1624731854209" duration="1328000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -397,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624565161162</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Work on location, animation and framer motion">
+      <created>1624573703024</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1624573703025</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +428,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Changes in main container" />
     <MESSAGE value="Added Typewritter npm pack" />
     <MESSAGE value="Added photo, chages in links" />
     <MESSAGE value="Added glow text to about site" />
@@ -443,6 +452,7 @@
     <MESSAGE value="Work on animations" />
     <MESSAGE value="Loading animation with percent is done" />
     <MESSAGE value="Trying to fix animaton" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix animaton" />
+    <MESSAGE value="Work on location, animation and framer motion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on location, animation and framer motion" />
   </component>
 </project>

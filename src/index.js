@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {AnimatePresence} from "framer-motion";
-import {Route, BrowserRouter as Router, Switch, useLocation} from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 
 ReactDOM.render(
     <React.StrictMode>

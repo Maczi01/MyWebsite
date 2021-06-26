@@ -22,12 +22,11 @@ const StyledApp = styled.div`
 const App = () => {
 
     const [isLoaded, setIsLoaded] = useState(false);
-
     const [counter, setCounter] = React.useState(0);
-    let location = useLocation();
+    const location = useLocation();
     useEffect(() => {
         const timer = setInterval(() => {
-            setCounter(prevCount => prevCount + 1); // <-- Change this line!
+            setCounter(prevCount => prevCount + 1);
             if (counter >= 2) {
                 clearInterval(timer);
                 setIsLoaded(true);
@@ -38,16 +37,6 @@ const App = () => {
         };
     },);
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setIsLoaded(true)
-    //     }, 1000);
-    //
-    //     return (() => {
-    //         setIsLoaded(false);
-    //     })
-    // }, []);
-
     return (
         <ThemeProvider theme={lightTheme}>
             <StyledApp>
@@ -55,15 +44,12 @@ const App = () => {
                 {
                     isLoaded ?
                         <>
-                            <AnimatePresence
-                                exitBeforeEnter={false}
-                            >
+                            <AnimatePresence exitBeforeEnter>
+                                <Router>
                                     <Navbar/>
-                                    <Switch location={location} key={location.pathname}>
+                                    <Switch location={location} key={location.key}>
                                         <ReactPageScroller>
-
-
-                                            <Route  key="frfe" exact path='/'>
+                                            <Route exact path='/'>
                                                 <HomeContent/>
                                             </Route>
                                             <Route exact path='/about'>
@@ -80,10 +66,10 @@ const App = () => {
                                             </Route>
                                         </ReactPageScroller>
                                     </Switch>
+                                </Router>
                             </AnimatePresence>
                         </>
                         :
-
                         <LoadingPage counter={counter}/>
                 }
             </StyledApp>

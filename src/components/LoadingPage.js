@@ -28,13 +28,22 @@ const HomeText = styled.p`
 `;
 
 const Container = styled.div`
-     width: 100vw; 
-     height:100vh;       
-     display: flex;
-     flex-direction: column;
-     margin: 0 auto;
+     //width: 100vw; 
+     //height:100vh;       
+     //display: flex;
+     //flex-direction: column;
+     //margin: 0 auto;
+     //background: yellow;
+     //  position: relative;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
      background: yellow;
-       position: relative;
 
 `;
 
