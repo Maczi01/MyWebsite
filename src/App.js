@@ -13,6 +13,7 @@ import ContactContent from "./Contact/ContactContent";
 import ReactPageScroller from 'react-page-scroller';
 import LoadingPage from "./components/LoadingPage";
 import {AnimatePresence} from "framer-motion";
+import LoadingScreen from "./components/LoadingScreen";
 
 
 const StyledApp = styled.div`
@@ -40,38 +41,41 @@ const App = () => {
     return (
         <ThemeProvider theme={lightTheme}>
             <StyledApp>
-                <GlobalStyle backgroundColor={lightTheme.backgroundColor}/>
-                {
-                    isLoaded ?
-                        <>
-                            <AnimatePresence exitBeforeEnter initial={true}>
-                                <Router>
-                                    <Navbar/>
-                                    <Switch location={location} key={location.key}>
-                                        <ReactPageScroller>
-                                            <Route exact path='/'>
-                                                <HomeContent/>
-                                            </Route>
-                                            <Route exact path='/about'>
-                                                <AboutContent/>
-                                            </Route>
-                                            <Route path='/resume'>
-                                                <ResumeContent/>
-                                            </Route>
-                                            <Route path='/projects'>
-                                                <ProjectsContent/>
-                                            </Route>
-                                            <Route path='/contact'>
-                                                <ContactContent/>
-                                            </Route>
-                                        </ReactPageScroller>
-                                    </Switch>
-                                </Router>
-                            </AnimatePresence>
-                        </>
-                        :
-                        <LoadingPage counter={counter}/>
-                }
+                <AnimatePresence exitBeforeEnter>
+
+                    {
+                        isLoaded ?
+                            (
+                                <>
+                                <GlobalStyle backgroundColor={lightTheme.backgroundColor}/>
+
+                                <Navbar/>
+                                <Switch location={location} key={location.key}>
+                                    {/*<ReactPageScroller>*/}
+                                        <Route exact path='/'>
+                                            <HomeContent/>
+                                        </Route>
+                                        <Route exact path='/about'>
+                                            <AboutContent/>
+                                        </Route>
+                                        <Route path='/resume'>
+                                            <ResumeContent/>
+                                        </Route>
+                                        <Route path='/projects'>
+                                            <ProjectsContent/>
+                                        </Route>
+                                        <Route path='/contact'>
+                                            <ContactContent/>
+                                        </Route>
+                                    {/*</ReactPageScroller>*/}
+                                </Switch>
+                                {/*</AnimatePresence>*/}
+                                </>
+                            )
+                            :
+                            (<LoadingPage counter={counter}/>)
+                    }
+                </AnimatePresence>
             </StyledApp>
         </ThemeProvider>
     );

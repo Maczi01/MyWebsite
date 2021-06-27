@@ -8,6 +8,7 @@ import AboutText from "../components/AboutText";
 import Skills from "../components/SkillsContainer";
 import PageTransitioning from "../components/PageTransitioning";
 import {motion} from "framer-motion";
+import React from "react";
 
 const HomeWrapper = styled.div`
      width: 80vw; 
@@ -58,14 +59,15 @@ const HomeText = styled.p`
 
 const HomeContent = () => (
     <>
+        <PageTransitioning/>
         <MainContainer>
-            <HomeWrapper>
-                <Image src={me} alt="authors face"/>
-                {/*<IntroWrapper>*/}
-                {/*    <Intro/>*/}
-                {/*    <IntroLinks/>*/}
-                {/*</IntroWrapper>*/}
-            </HomeWrapper>
+            {/*<HomeWrapper>*/}
+            {/*    <Image src={me} alt="authors face"/>*/}
+            {/*    /!*<IntroWrapper>*!/*/}
+            {/*    /!*    <Intro/>*!/*/}
+            {/*    /!*    <IntroLinks/>*!/*/}
+            {/*    /!*</IntroWrapper>*!/*/}
+            {/*</HomeWrapper>*/}
 
             <HomeTitle>
                 Cześć!

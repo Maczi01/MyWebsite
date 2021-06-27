@@ -15,7 +15,6 @@ const Container = styled.div`
 
 const MainContainer = ({children}) => (
     <>
-        <PageTransitioning/>
         <Container>
             <Sidebar/>
             {children}

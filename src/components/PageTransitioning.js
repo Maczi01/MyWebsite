@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { motion } from "framer-motion";
-import React from "react";
 
 const variants = {
     initial: {
@@ -10,7 +9,7 @@ const variants = {
         bottom: "100vh",
         transition: {
             duration: 3.7,
-            ease: [1.12, 1, 0.2, 1]
+            ease: [0.12, 1, 0.2, 1]
         }
     },
     exit: {
@@ -19,23 +18,24 @@ const variants = {
             duration: .1
         }
     },
-    // exitStop: {
-    //     bottom: 0,
-    //     transition: {
-    //         duration: .6,
-    //         delay: .9,
-    //         ease: [0.12, 1, 0.2, 1]
-    //     }
-    // }
+    exitStop: {
+        bottom: 0,
+        transition: {
+            duration: .6,
+            delay: .9,
+            ease: [0.12, 1, 0.2, 1]
+        }
+    }
 };
+
 const TransitionHelper = styled(motion.div)`
-    position: fixed;
+position: fixed;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: 9999;
     background-color: yellow;
-`
+`;
 
 const InitialTransition = styled(TransitionHelper).attrs(() => ({
     initial: "initial",
