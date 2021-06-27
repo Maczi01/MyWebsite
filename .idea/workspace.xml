@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LoadingScreen.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SplitText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/form/MyComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/HomeContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home/HomeContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageTransitioning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageTransitioning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoadingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +102,7 @@
       <workItem from="1623575410627" duration="5828000" />
       <workItem from="1623792593322" duration="574000" />
       <workItem from="1623872740481" duration="23955000" />
-      <workItem from="1624731854209" duration="14678000" />
+      <workItem from="1624731854209" duration="19240000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -420,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624747513363</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Commented react page scroller">
+      <created>1624830801337</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1624830801337</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +447,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added glow text to about site" />
     <MESSAGE value="Added Simple sidebar and buttonicon" />
     <MESSAGE value="Added letter (as temporary logo)" />
     <MESSAGE value="Added flags" />
@@ -466,6 +471,7 @@
     <MESSAGE value="Work on location, animation and framer motion" />
     <MESSAGE value="Changing in animation on homepage" />
     <MESSAGE value="try to change animate on routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to change animate on routes" />
+    <MESSAGE value="Commented react page scroller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commented react page scroller" />
   </component>
 </project>

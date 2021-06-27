@@ -28,7 +28,7 @@ const App = () => {
     useEffect(() => {
         const timer = setInterval(() => {
             setCounter(prevCount => prevCount + 1);
-            if (counter >= 2) {
+            if (counter >= 3) {
                 clearInterval(timer);
                 setIsLoaded(true);
             }

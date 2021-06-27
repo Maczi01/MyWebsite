@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import CountUp from "react-countup";
-import {motion} from "framer-motion";
+import {AnimatePresence, motion} from "framer-motion";
 import PageTransitioning from "./PageTransitioning";
+import React from "react";
+import {TextReveal} from "./ContentReveal";
+import SplitText from "./SplitText";
+import MyComponent from "./form/MyComponent";
 
 const HomeTitle = styled.div`
     justify-content: flex-start;
@@ -60,13 +64,16 @@ const Center = styled.div`
 `
 
 const LoadingPage = ({counter}) => (
-        <Container>
-            <HomeTitle>
+    <Container>
+        <HomeTitle>
+            <AnimatePresence>
                 <Center>
-                    {counter}
+                    <MyComponent/>
                 </Center>
-            </HomeTitle>
-        </Container>
+            </AnimatePresence>
+
+        </HomeTitle>
+    </Container>
 )
 
 export default LoadingPage;
