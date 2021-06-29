@@ -69,7 +69,6 @@ const App = () => {
                                         </Route>
                                     {/*</ReactPageScroller>*/}
                                 </Switch>
-                                {/*</AnimatePresence>*/}
                                 </>
                             )
                             :

@@ -1,13 +1,7 @@
 import MainContainer from "../components/MainContainer";
-import Intro from "../components/Intro";
-import IntroLinks from "../components/IntroLinks";
 import styled from "styled-components";
-import me from '../assets/me.png';
-import Title from "../components/Title";
-import AboutText from "../components/AboutText";
 import Skills from "../components/SkillsContainer";
 import PageTransitioning from "../components/PageTransitioning";
-import {motion} from "framer-motion";
 import React from "react";
 
 const HomeWrapper = styled.div`
@@ -40,11 +34,6 @@ const HomeTitle = styled.div`
     font-weight: bold;
     color: ${({theme}) => theme.colors.yellow};
     text-shadow: 
-    0 0 0.125em ${({theme}) => theme.colors.gray},
-    0 0 0.250em ${({theme}) => theme.colors.yellow},
-    0 0 0.5em ${({theme}) => theme.colors.yellow},
-    0 0 0.75em ${({theme}) => theme.colors.yellow},
-    0 0 1em ${({theme}) => theme.colors.yellow};
 `;
 
 const HomeText = styled.p`
@@ -70,17 +59,16 @@ const HomeContent = () => (
             {/*</HomeWrapper>*/}
 
             <HomeTitle>
-                Cześć!
+                Lorem ipsum
             </HomeTitle>
             <HomeText>
-                Nazywam się Mateusz, od kilku lat pracuje jako konstruktor w branży mechanicznej. Ukończyłem
-                Inżynierię mechaniczną na Politechnice Wrocławskiej z tytułem magistra. Od kilku lat interesuje się
-                programowaniem, ze szczególnym uwzględnieniem projektowania aplikacji internetowych. W obszarze
-                moich zainteresowań są zagadnienia związane z frontendem - głównie React, a także z backednem
-                (Java i Spring).
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             </HomeText>
             <HomeTitle>
-                Umiejętności
+                Lorem ipsum
             </HomeTitle>
             <Skills/>
         </MainContainer>

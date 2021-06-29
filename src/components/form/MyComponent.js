@@ -1,14 +1,27 @@
-const MyComponent = ({isVisible,  children }) => (
+import {AnimatePresence, motion} from "framer-motion";
+
+const MyComponent = ({counter}) => (
     <AnimatePresence>
-        {isVisible && (
+        {(counter <= 1) && (
             <motion.div
                 key="child"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                style={{ color }}
+                initial={{
+                    opacity: 1,
+                    bottom: 0
+                }}
+                animate={{
+                    opacity: 0,
+                    bottom: "100vh",
+                    transition: {
+                        duration: 3.7,
+                        ease: [0.12, 1, 0.2, 1]
+                    }
+                }}
+                exit={{
+                    opacity: 0
+                }}
             >
-                {children}
+                {counter}
             </motion.div>
         )}
     </AnimatePresence>

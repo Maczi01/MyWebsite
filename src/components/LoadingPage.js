@@ -68,7 +68,8 @@ const LoadingPage = ({counter}) => (
         <HomeTitle>
             <AnimatePresence>
                 <Center>
-                    <MyComponent/>
+                    <MyComponent
+                        counter={counter}/>
                 </Center>
             </AnimatePresence>
 

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/SplitText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/MyComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LoadingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form/MyComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/MyComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,7 @@
       <workItem from="1623575410627" duration="5828000" />
       <workItem from="1623792593322" duration="574000" />
       <workItem from="1623872740481" duration="23955000" />
-      <workItem from="1624731854209" duration="19240000" />
+      <workItem from="1624731854209" duration="19953000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -426,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624830801337</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Try to add animation to loading page">
+      <created>1624836054771</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1624836054771</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +453,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Simple sidebar and buttonicon" />
     <MESSAGE value="Added letter (as temporary logo)" />
     <MESSAGE value="Added flags" />
     <MESSAGE value="Changes in sidebar" />
@@ -472,6 +477,7 @@
     <MESSAGE value="Changing in animation on homepage" />
     <MESSAGE value="try to change animate on routes" />
     <MESSAGE value="Commented react page scroller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commented react page scroller" />
+    <MESSAGE value="Try to add animation to loading page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to add animation to loading page" />
   </component>
 </project>
