@@ -54,10 +54,10 @@ const Sidebar = () => (
                 <ButtonIcon as={NavLink} to="/notes" icon={githubico} activeclass="active"/>
             </li>
             <li>
-                <ButtonIcon as={NavLink} to="/twitters" icon={instaico} activeclass="active"/>
+                <ButtonIcon as={NavLink} to="/notes" icon={githubico} activeclass="active"/>
             </li>
             <li>
-                <ButtonIcon as={NavLink} to="/articles" icon={linkedin} activeclass="active"/>
+                <ButtonIcon as={NavLink} to="/notes" icon={githubico} activeclass="active"/>
             </li>
         </StyledLinksList>
         {/*<StyledLogoutButton as={NavLink} to="/login" icon={logoutIcon} />*/}

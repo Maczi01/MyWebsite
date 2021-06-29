@@ -114,12 +114,12 @@ const StyledFlag = styled.img`
 const Navbar = () => (
     <NavbarWrapper>
         <StyledNavLink exact to="/">Główna</StyledNavLink><br/>
-        <StyledNavLink to="/about" activeclass="active">O mnie </StyledNavLink><br/>
-        <StyledNavLink to="/projects" activeclass="active">Projekty</StyledNavLink><br/>
-        <StyledNavLink to="/resume" activeclass="active">Moje CV</StyledNavLink><br/>
-        <StyledNavLink to="/contact" activeclass="active">Kontakt</StyledNavLink><br/>
+        <StyledNavLink to="/about" activeclass="active">Item 1 </StyledNavLink><br/>
+        <StyledNavLink to="/projects" activeclass="active">Item 2</StyledNavLink><br/>
+        <StyledNavLink to="/resume" activeclass="active">Item 3</StyledNavLink><br/>
+        <StyledNavLink to="/contact" activeclass="active">Item 4</StyledNavLink><br/>
         <StyledFlag src={uk}/>
-        <StyledFlag src={ie}/>
+        {/*<StyledFlag src={ie}/>*/}
         <StyledFlag src={pl}/>
     </NavbarWrapper>
 );

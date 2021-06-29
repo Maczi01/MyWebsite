@@ -107,7 +107,7 @@ const ResumeForm = () => {
             <InputsWrapper>
                 <StyledLabel htmlFor="from_name">
                     <p data-scroll delay={.3} transparent>
-                        Cel pobrania CV:
+                        Cel:
                     </p>
                 </StyledLabel>
                 <StyledSelect>
@@ -119,7 +119,7 @@ const ResumeForm = () => {
             <StyledSubmit type="submit"
                 // isSubmitted={isSubmitted}
                           value="Pobieram Twoje CV!">
-                Pobieram Twoje CV
+                Item 7
             </StyledSubmit>
         </FormWrapper>
 
