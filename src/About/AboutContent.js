@@ -17,51 +17,16 @@ const AboutTitle = styled.h3`
 const AboutContent = () => (
     <MainContainer>
         <Title>
-            O mnie
+            Lorem ipsum
         </Title>
         <AboutText>
-            Nazywam się Mateusz, od kilku lat pracuje jako konstruktor w branży mechanicznej. Ukończyłem
-            Inżynierię mechaniczną na Politechnice Wrocławskiej z tytułem magistra. Od kilku lat interesuje się
-            programowaniem, ze szczególnym uwzględnieniem projektowania aplikacji internetowych. W obszarze
-            moich zainteresowań są zagadnienia związane z frontendem - głównie React, a także z backednem
-            (Java i Spring).
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum."
         </AboutText>
-        <AboutTitle>
-            Programowanie
-        </AboutTitle>
-        <AboutText>
-            Programowanie to coś, co sprawia mi ogromną frajdę. Uwielbiam poznawać nowe technologie, tworzyć
-            nowe projekty i rozwiązywać problemy. W nauce programowania pociąga mnie ogrom wiedzy, ciągłe zmiany i
-            dostępność materiałów do nauki.
-        </AboutText>
-        <AboutTitle>
-            Doświadczenie
-        </AboutTitle>
-        <AboutText>
-            Posiadam kilkuletnie doświadczenie w projektowaniu konstrukcji maszyn przemysłu ciężkiego.
-            Przez 5 lat zajmowałem się także organizacją imprez masowych. Posiadam niewielkie doświadczenie w
-            branży IT.
-        </AboutText>
-        <AboutTitle>
-            Osobowość
-        </AboutTitle>
-        <AboutText>
-            Jestem miłą i komunikatywną osobą, która lubi pracę w grupie. Lubię współdziałać z osobami zmotywowanymi do
-            pracy.
-            Myślę, że jestem kreatywny. Mam dużo pomysłów i często znajduje nieoczywiste rozwiązania. Ponadto uwielbiam
-            rozmawiać z ludźmi.
-        </AboutText>
-        <AboutTitle>
-            Podziękowania
-        </AboutTitle>
-        <AboutText>
-            Jesli czytasz ten tekst, to mogę uznać, że dotarłeś do końca. Mam nadzieję, że udało Ci się mnie trochę
-            poznać. Jeżeli jednak miałbyś jakiekolwiek pytania, nie wahaj się napisać. Odpisuje na każdy email!
-            Jeśli jednak potrzebujesz jedynie mojego CV, kliknij tu.
-        </AboutText>
-        <AboutTitle>
-            Miłego dnia!
-        </AboutTitle>
+
     </MainContainer>
 )
 

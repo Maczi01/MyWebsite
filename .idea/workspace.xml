@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dac26bd-e261-41e7-9482-3309df097b98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/MyComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/MyComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/About/AboutContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/About/AboutContent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +97,7 @@
       <workItem from="1623575410627" duration="5828000" />
       <workItem from="1623792593322" duration="574000" />
       <workItem from="1623872740481" duration="23955000" />
-      <workItem from="1624731854209" duration="19953000" />
+      <workItem from="1624731854209" duration="20281000" />
     </task>
     <task id="LOCAL-00001" summary="Start working on portfolio">
       <created>1620992548667</created>
@@ -432,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624836054771</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Changed description in HomeContent">
+      <created>1624996209302</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1624996209302</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +456,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added letter (as temporary logo)" />
     <MESSAGE value="Added flags" />
     <MESSAGE value="Changes in sidebar" />
     <MESSAGE value="Changes in about, new flags icons" />
@@ -478,6 +480,7 @@
     <MESSAGE value="try to change animate on routes" />
     <MESSAGE value="Commented react page scroller" />
     <MESSAGE value="Try to add animation to loading page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Try to add animation to loading page" />
+    <MESSAGE value="Changed description in HomeContent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed description in HomeContent" />
   </component>
 </project>
